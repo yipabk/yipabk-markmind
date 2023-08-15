@@ -1,21 +1,20 @@
-import React from "react";
+import React from 'react'
 
 interface ItemProps {
-  children: React.ReactNode;
-  isActive?: boolean;
+	children: React.ReactNode
+	linkTo: string
+	isActive?: boolean
 }
 
-function Navitem(props: ItemProps) {
-  const isActive = props.isActive !== undefined ? props.isActive : false;
-
-  return (
-    <div
-      className={`decoration-orange decoration-2 mx-4
-        ${isActive ? "font-bold underline" : "font-medium"}`}
-    >
-      {props.children}
-    </div>
-  );
+function Navitem({ isActive = false, linkTo, children }: ItemProps) {
+	return (
+		<a
+			href={linkTo}
+			className={`decoration-orange decoration-2 mx-4 text-xs cursor-pointer hover:opacity-75
+        ${isActive ? 'font-bold underline underline-offset-8' : 'font-medium'}`}>
+			{children}
+		</a>
+	)
 }
 
-export default Navitem;
+export default Navitem
