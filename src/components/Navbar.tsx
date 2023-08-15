@@ -13,7 +13,7 @@ interface NavMenuItem {
 export const Navbar = () => {
 	const availableMenus: NavMenuItem[] = [
 		{ name: 'HOME', linkTo: '#', isActive: true },
-		{ name: 'TENTANG KAMi', linkTo: '#', isActive: false },
+		{ name: 'TENTANG KAMI', linkTo: '#', isActive: false },
 		{ name: 'PROGRAM', linkTo: '#', isActive: false },
 		{ name: 'KONTRIBUSI', linkTo: '#', isActive: false },
 		{ name: 'PARTNER', linkTo: '#', isActive: false },
@@ -34,12 +34,12 @@ export const Navbar = () => {
 							<div className='-mr-2 -my-2 md:hidden'>
 								<Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
 									<span className='sr-only'>Open menu</span>
-									<Bars3Icon />
+									<Bars3Icon color='#000' enableBackground='false' height={24} width={24} />
 								</Popover.Button>
 							</div>
 							<Popover.Group as='nav' className='hidden md:flex space-x-4'>
 								{availableMenus.map((menu) => (
-									<Navitem linkTo={menu.linkTo} isActive={menu.isActive}>
+									<Navitem linkTo={menu.linkTo} isActive={menu.isActive} key={`NavItem-${menu.name}`}>
 										{menu.name}
 									</Navitem>
 								))}
@@ -69,7 +69,7 @@ export const Navbar = () => {
 										<div className='-mr-2'>
 											<Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
 												<span className='sr-only'>Close menu</span>
-												<XMarkIcon />
+												<XMarkIcon color='#000' enableBackground='false' height={24} width={24} />
 											</Popover.Button>
 										</div>
 									</div>
