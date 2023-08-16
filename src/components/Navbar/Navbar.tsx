@@ -52,20 +52,20 @@ export const Navbar = () => {
 		<Popover className='fixed w-full z-50 bg-white'>
 			{({ open }) => (
 				<>
-					<div className='mx-auto px-4 sm:px-6 font-navbar'>
+					<div className='mx-auto px-2 md:px-6 font-navbar'>
 						<div className='flex justify-between items-center border-b-2 border-gray-100 md:justify-start md:space-x-10'>
 							<div className='flex justify-start lg:w-0 lg:flex-1'>
 								<a href='#'>
 									<Logo />
 								</a>
 							</div>
-							<div className='-mr-2 -my-2 md:hidden'>
+							<div className='lg:-mr-2 -my-2 md:hidden'>
 								<Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
 									<span className='sr-only'>Open menu</span>
 									<Bars3Icon color='#000' enableBackground='false' height={24} width={24} />
 								</Popover.Button>
 							</div>
-							<Popover.Group as='nav' className='hidden md:flex space-x-4'>
+							<Popover.Group as='nav' className='hidden md:flex md:space-x-1 lg:space-x-4'>
 								{availableMenus.map((menu) =>
 									menu.children.length > 0 ? (
 										<NavbarItemDropdown item={menu} />
