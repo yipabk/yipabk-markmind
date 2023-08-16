@@ -2,30 +2,58 @@ import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Fragment } from 'react'
 import Navitem from './Navitem'
-import { Logo } from './commons/Logo'
+import { useLocation } from 'react-router-dom'
+import { Logo } from '../commons/Logo'
+import { NavbarItemDropdown } from './NavbarItemDropdown'
 
-interface NavMenuItem {
+export interface NavMenuItemChildren {
+	name: string
+	linkTo: string
+}
+
+export interface NavMenuItem {
 	name: string
 	linkTo: string
 	isActive: boolean
+	children: NavMenuItemChildren[]
 }
 
 export const Navbar = () => {
+	const { pathname } = useLocation()
 	const availableMenus: NavMenuItem[] = [
-		{ name: 'HOME', linkTo: '#', isActive: true },
-		{ name: 'TENTANG KAMI', linkTo: '#', isActive: false },
-		{ name: 'PROGRAM', linkTo: '#', isActive: false },
-		{ name: 'KONTRIBUSI', linkTo: '#', isActive: false },
-		{ name: 'PARTNER', linkTo: '#', isActive: false },
-		{ name: 'BERITA TERKINI', linkTo: '#', isActive: false },
+		{ name: 'HOME', linkTo: '/', isActive: pathname === '/', children: [] },
+		{ name: 'TENTANG KAMI', linkTo: '/tentang-kami', isActive: pathname === '/tentang-kami', children: [] },
+		{
+			name: 'PROGRAM',
+			linkTo: '#',
+			isActive: pathname === '/program',
+			children: [
+				{ name: 'LIFE', linkTo: '/life' },
+				{ name: 'RAISE', linkTo: '/raise' },
+				{ name: 'TEACH', linkTo: '/teach' },
+				{ name: 'CARE', linkTo: '/care' },
+			],
+		},
+		{ name: 'KONTRIBUSI', linkTo: '/kontribusi', isActive: pathname === '/kontribusi', children: [] },
+		{ name: 'PARTNER', linkTo: '/partner', isActive: pathname === '/partner', children: [] },
+		{
+			name: 'PUBLIKASI',
+			linkTo: '/publikasi',
+			isActive: pathname === '/publikasi',
+			children: [
+				{ name: 'BERITA TERKINI', linkTo: '/publikasi#berita-terkini' },
+				{ name: 'ARTIKEL', linkTo: '/artikel' },
+				{ name: 'NEWSLETTER', linkTo: '/newsletter' },
+			],
+		},
 	]
 
 	return (
-		<Popover className='relative bg-white'>
+		<Popover className='fixed w-full z-50 bg-white'>
 			{({ open }) => (
 				<>
-					<div className='mx-auto px-4 sm:px-6'>
-						<div className='flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10'>
+					<div className='mx-auto px-4 sm:px-6 font-navbar'>
+						<div className='flex justify-between items-center border-b-2 border-gray-100 md:justify-start md:space-x-10'>
 							<div className='flex justify-start lg:w-0 lg:flex-1'>
 								<a href='#'>
 									<Logo />
@@ -38,11 +66,15 @@ export const Navbar = () => {
 								</Popover.Button>
 							</div>
 							<Popover.Group as='nav' className='hidden md:flex space-x-4'>
-								{availableMenus.map((menu) => (
-									<Navitem linkTo={menu.linkTo} isActive={menu.isActive} key={`NavItem-${menu.name}`}>
-										{menu.name}
-									</Navitem>
-								))}
+								{availableMenus.map((menu) =>
+									menu.children.length > 0 ? (
+										<NavbarItemDropdown item={menu} />
+									) : (
+										<Navitem linkTo={menu.linkTo} isActive={menu.isActive} key={`NavItem-${menu.name}`}>
+											{menu.name}
+										</Navitem>
+									)
+								)}
 							</Popover.Group>
 						</div>
 					</div>
@@ -76,11 +108,15 @@ export const Navbar = () => {
 								</div>
 								<div className='py-6 px-5 space-y-6'>
 									<div className='grid grid-cols-2 gap-y-4 gap-x-8'>
-										{availableMenus.map((menu) => (
-											<Navitem linkTo={menu.linkTo} isActive={menu.isActive}>
-												{menu.name}
-											</Navitem>
-										))}
+										{availableMenus.map((menu) =>
+											menu.children.length > 0 ? (
+												<NavbarItemDropdown item={menu} />
+											) : (
+												<Navitem linkTo={menu.linkTo} isActive={menu.isActive} key={`NavItem-${menu.name}`}>
+													{menu.name}
+												</Navitem>
+											)
+										)}
 									</div>
 								</div>
 							</div>
