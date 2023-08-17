@@ -1,17 +1,17 @@
 import React from "react";
 
 interface HeaderProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   bg: string;
   color?: string;
-  className: string;
+  className?: string;
 }
 
 export const FadingHeader = ({
-  children,
+  children = null,
   bg,
-  color = "black/50",
-  className,
+  color = "black",
+  className = "",
 }: HeaderProps) => {
   return (
     <div className={`relative overflow-hidden ${className}`}>
