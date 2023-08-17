@@ -1,5 +1,5 @@
-import logo from '../../assets/images/logo.png'
+import logo from "../../assets/images/logo.png";
 
 export const Logo = () => {
-	return <img height={45} src={logo}></img>
-}
+  return <img width={96} height={96} src={logo}></img>;
+};
