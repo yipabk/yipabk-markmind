@@ -68,7 +68,7 @@ export const Navbar = () => {
 							<Popover.Group as='nav' className='hidden md:flex md:space-x-1 lg:space-x-4'>
 								{availableMenus.map((menu) =>
 									menu.children.length > 0 ? (
-										<NavbarItemDropdown item={menu} />
+										<NavbarItemDropdown key={`NavItem-${menu.name}`} item={menu} />
 									) : (
 										<Navitem linkTo={menu.linkTo} isActive={menu.isActive} key={`NavItem-${menu.name}`}>
 											{menu.name}
