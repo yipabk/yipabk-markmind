@@ -9,14 +9,18 @@ interface Props {
 }
 
 export const NavbarItemDropdown = ({ item }: Props) => {
+	let timeout: number = -1
 	const [isOpen, setOpen] = useState<boolean>(false)
 
 	const handleHover = () => {
+		clearTimeout(timeout)
 		setOpen(true)
 	}
 
 	const handleLeave = () => {
-		setOpen(false)
+		timeout = setTimeout(() => {
+			setOpen(false)
+		}, 200)
 	}
 
 	return (
