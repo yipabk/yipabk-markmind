@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar/Navbar'
 import LandingPage from './pages/LandingPage/LandingPage'
 import { Kontribusi } from './pages/Kontribusi'
 import { TentangKami } from './pages/TentangKami'
+import { Partner } from './pages/Partner'
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 					<Route index element={<LandingPage />} />
 					<Route path='kontribusi' element={<Kontribusi />} />
 					<Route path='tentang-kami' element={<TentangKami />} />
+					<Route path='partner' element={<Partner />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>
