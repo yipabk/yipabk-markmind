@@ -9,7 +9,7 @@ export const Kontribusi = () => {
 			<FadingHeader variant='black' bg={background} className='flex flex-col justify-end items-center h-[100vh] w-full'>
 				<div className='text-white font-display text-5xl mb-16'>DONASI</div>
 				<div className='text-white font-display text-3xl mb-8 tracking-wide text-center'>
-					"Giving is the GREATES Act of GRACE"
+					"Giving is the GREATEST Act of GRACE"
 				</div>
 				<div className='text-orange text-xl font-medium w-1/2 text-center mb-[15vh] tracking-wide'>
 					Mari salurkan donasi Anda melalui rekening YIPABK untuk bersama wujudkan mimpi anak berkebutuhan khusus!
