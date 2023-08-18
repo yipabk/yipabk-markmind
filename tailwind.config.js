@@ -5,7 +5,7 @@ export default {
 		extend: {
 			fontFamily: {
 				display: ['DM Serif Display'],
-				navbar: ['Montserrat'],
+				montserrat: ['Montserrat'],
 			},
 			colors: {
 				lightgrey: '#DAD9D9',
