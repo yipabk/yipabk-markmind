@@ -1,15 +1,16 @@
 import bca from '../assets/images/BCA.png'
 import qr from '../assets/images/QR.png'
+import background from '../assets/images/donasi-hero.png'
 import { FadingHeader } from '../components/commons/FadingHeader'
 
 export const Kontribusi = () => {
 	return (
 		<div>
-			<FadingHeader
-				bg='https://images.unsplash.com/photo-1567507968014-cd038413b9f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0JTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80'
-				className='flex flex-col justify-end items-center h-[100vh] w-full'>
+			<FadingHeader variant='black' bg={background} className='flex flex-col justify-end items-center h-[100vh] w-full'>
 				<div className='text-white font-display text-5xl mb-16'>DONASI</div>
-				<div className='text-white font-display text-3xl mb-8 tracking-wide text-center'>"Giving is the GREATES Act of GRACE"</div>
+				<div className='text-white font-display text-3xl mb-8 tracking-wide text-center'>
+					"Giving is the GREATES Act of GRACE"
+				</div>
 				<div className='text-orange text-xl font-medium w-1/2 text-center mb-[15vh] tracking-wide'>
 					Mari salurkan donasi Anda melalui rekening YIPABK untuk bersama wujudkan mimpi anak berkebutuhan khusus!
 				</div>

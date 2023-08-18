@@ -15,7 +15,7 @@ export const FadingHeader = ({ children = null, bg, className = '', variant }: H
 				className={`absolute w-full h-full z-[-1] bg-gradient-to-t ${
 					variant === 'blue' ? 'from-blue' : 'from-black'
 				} to-transparent`}></div>
-			<img className='absolute w-full h-full object-cover z-[-2]' src={bg}></img>
+			<img className='absolute w-full h-full object-cover z-[-2] grayscale' src={bg}></img>
 		</div>
 	)
 }
