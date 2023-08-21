@@ -52,8 +52,8 @@ export const Navbar = () => {
 		<Popover className='fixed w-full z-50 bg-white'>
 			{({ open }) => (
 				<>
-					<div className='mx-auto px-2 md:px-6 font-montserrat'>
-						<div className='flex justify-between items-center border-b-2 border-gray-100 md:justify-start md:space-x-10'>
+					<div className='mx-auto px-2 font-montserrat'>
+						<div className='flex justify-between items-center border-b-2 border-gray-100 md:space-x-10'>
 							<div className='flex justify-start lg:w-0 lg:flex-1'>
 								<a href='/'>
 									<Logo />

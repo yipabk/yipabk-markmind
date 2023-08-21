@@ -24,13 +24,13 @@ export const NavbarItemDropdown = ({ item }: Props) => {
 	}
 
 	return (
-		<Popover className='relative'>
+		<Popover className='relative flex w-full md:w-auto'>
 			{() => (
 				<>
 					<Popover.Button
 						onMouseEnter={handleHover}
 						onMouseLeave={handleLeave}
-						className={`flex items-center justify-center decoration-orange decoration-2 mx-4 text-xs cursor-pointer hover:opacity-75
+						className={`w-full py-2 flex items-center text-center justify-center decoration-orange decoration-2 mx-4 text-xs cursor-pointer hover:opacity-75
                   ${item.isActive ? 'font-bold underline underline-offset-8' : 'font-medium'}`}>
 						<span>{item.name}</span>
 						<ChevronDown
@@ -55,7 +55,7 @@ export const NavbarItemDropdown = ({ item }: Props) => {
 							onMouseEnter={handleHover}
 							onMouseLeave={handleLeave}
 							static
-							className='absolute z-10 -ml-4 mt-3 transform px-2  max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2'>
+							className='absolute z-10 ml-[25%] mt-10 transform px-2 max-w-md sm:px-0'>
 							<div className='shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden'>
 								<div className='relative grid bg-white'>
 									{item.children.map((child) => (
