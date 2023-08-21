@@ -1,6 +1,75 @@
-import { FadingHeader } from '../components/commons/FadingHeader'
+import { useEffect, useState } from 'react'
+import team1 from '../../assets/images/team-1.png'
+import team2 from '../../assets/images/team-2.png'
+import team3 from '../../assets/images/team-3.png'
+import team4 from '../../assets/images/team-4.png'
+import team5 from '../../assets/images/team-5.png'
+import team6 from '../../assets/images/team-6.png'
+import team7 from '../../assets/images/team-7.png'
+import team8 from '../../assets/images/team-8.png'
+import team9 from '../../assets/images/team-9.png'
+import { FadingHeader } from '../../components/commons/FadingHeader'
+import { Slider } from '../../components/commons/Slider'
+import useWindowDimensions from '../../helpers/useWindowDimension'
+import { TeamCard, TeamCardProps } from './TeamCard'
 
 export const TentangKami = () => {
+	const peoples: TeamCardProps[] = [
+		{
+			image: team1,
+			title: 'Ketua Dewan Pembina',
+		},
+		{
+			image: team2,
+			title: 'Anggota Dewan Pembina',
+		},
+		{
+			image: team3,
+			title: 'Anggota Dewan Pembina',
+		},
+		{
+			image: team4,
+			title: 'Founder Bentara Campus',
+		},
+		{
+			image: team5,
+			title: 'Dewan Pengawas',
+		},
+		{
+			image: team6,
+			title: 'Ketua Dewan Pengurus',
+		},
+		{
+			image: team7,
+			title: 'Wakil Ketua Dewan Pengurus',
+		},
+		{
+			image: team8,
+			title: 'Sekretaris Dewan Pengurus',
+		},
+		{
+			image: team9,
+			title: 'Bendahara Dewan Pengurus',
+		},
+	]
+	const { width } = useWindowDimensions()
+	const getMaxItem = () => {
+		if (width >= 1280) {
+			return 3
+		}
+		if (width >= 640) {
+			return 2
+		}
+
+		return 1
+	}
+
+	const [maxItem, setMaxItem] = useState(getMaxItem())
+
+	useEffect(() => {
+		setMaxItem(getMaxItem())
+	}, [width, setMaxItem])
+
 	return (
 		<div>
 			<FadingHeader
@@ -9,8 +78,8 @@ export const TentangKami = () => {
 				bg='https://images.fineartamerica.com/images-medium-large/attentive-cat-in-black-and-white-alex-ag.jpg'>
 				<div className='text-white font-display text-5xl mb-12 tracking-wide'>TENTANG KAMI</div>
 			</FadingHeader>
-			<div className='px-56'>
-				<div className='w-full h-[65vh] flex justify-center items-center flex-col'>
+			<div>
+				<div className='px-6 sm:px-12 md:px-24 lg:px-56 w-full py-12 flex justify-center items-center flex-col'>
 					<div className='mb-24'>
 						<div className='mb-6 tracking-wide text-justify'>
 							Yayasan Indonesia Peduli Anak Berkebutuhan Khusus (YIPABK) berdiri tahun 2012 dengan akte notaris Linda
@@ -33,10 +102,10 @@ export const TentangKami = () => {
 						</div>
 					</div>
 				</div>
-				<div className='w-full h-[120vh]'>
-					<div className='flex mb-16'>
+				<div className='px-6 sm:px-12 md:px-24 lg:px-56 w-full min-h-[80vh] lg:min-h-[100vh] py-16'>
+					<div className='flex flex-col xl:flex-row mb-16 gap-6 lg:gap-16'>
 						<img
-							className='w-96 h-64 object-cover mr-16'
+							className='w-96 h-64 object-cover'
 							src='https://images.unsplash.com/photo-1603157259666-71adcb873119?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2F0JTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80'
 							alt=''
 						/>
@@ -50,9 +119,9 @@ export const TentangKami = () => {
 							<div className='bg-orange w-[14rem] h-[0.14rem] absolute top-[2.93rem] left-[-5rem]'></div>
 						</div>
 					</div>
-					<div className='flex'>
+					<div className='flex flex-col xl:flex-row gap-6 lg:gap-16'>
 						<img
-							className='w-96 h-64 object-cover mr-16'
+							className='w-96 h-64 object-cover'
 							src='https://images.unsplash.com/photo-1603157259666-71adcb873119?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2F0JTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80'
 							alt=''
 						/>
@@ -82,10 +151,17 @@ export const TentangKami = () => {
 						</div>
 					</div>
 				</div>
-				<div className='w-full h-[75vh]'>
-					<div className='text-4xl font-display underline underline-offset-8 decoration-orange tracking-wide'>
-						Meet Our Team
+				<div className='w-full h-[75vh] py-24 px-4 sm:px-6 md:px-12 lg:px-24 items-center flex flex-col xl:flex-row gap-12'>
+					<div className='text-4xl ml-4 xl:ml-16 whitespace-pre-line text-center xl:text-start font-display underline underline-offset-8 decoration-orange tracking-wide'>
+						{`Meet Our
+						 Team`}
 					</div>
+					<Slider<TeamCardProps>
+						key={maxItem}
+						items={peoples}
+						maxItemPerView={maxItem}
+						renderItem={(item) => <TeamCard key={item.title} {...item} />}
+					/>
 				</div>
 			</div>
 		</div>
