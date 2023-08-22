@@ -6,6 +6,7 @@ import { Kontribusi } from "./pages/Kontribusi";
 import { TentangKami } from "./pages/TentangKami";
 import { Partner } from "./pages/Partner";
 import { Publikasi } from "./pages/Publikasi";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 function App() {
   return (

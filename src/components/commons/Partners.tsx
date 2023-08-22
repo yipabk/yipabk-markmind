@@ -27,13 +27,27 @@ export const Partners = ({ title, subtitle }: Props) => {
 			<div className='font-montserrat text-center text-3xl lg:text-5xl font-bold mt-4'>{subtitle}</div>
 			<div className='flex flex-col gap-4 mt-8'>
 				<div className='flex flex-wrap justify-center items-center gap-6'>
-					{images.map((image) => (
-						<img key={image} src={image} />
+					{images.map((image, index) => (
+						<img
+							data-aos='zoom-out-down'
+							data-aos-once='true'
+							data-aos-offset='250'
+							data-aos-delay={`${index * 50}`}
+							key={image}
+							src={image}
+						/>
 					))}
 				</div>
 				<div className='flex flex-wrap justify-center items-center gap-6 '>
-					{images2.map((image) => (
-						<img key={image} src={image} />
+					{images2.map((image, index) => (
+						<img
+							data-aos='zoom-out-down'
+							data-aos-once='true'
+							data-aos-offset='250'
+							data-aos-delay={`${(index + images.length) * 50}`}
+							key={image}
+							src={image}
+						/>
 					))}
 				</div>
 			</div>
