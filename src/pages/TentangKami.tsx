@@ -102,6 +102,7 @@ export const TentangKami = () => {
           <div className="text-4xl font-display underline underline-offset-8 decoration-orange tracking-wide">
             Meet Our Team
           </div>
+          <div></div>
         </div>
       </div>
     </div>
