@@ -25,7 +25,7 @@ export const Navbar = () => {
 		{ name: 'TENTANG KAMI', linkTo: '/tentang-kami', isActive: pathname === '/tentang-kami', children: [] },
 		{
 			name: 'PROGRAM',
-			linkTo: '#',
+			linkTo: '/program',
 			isActive: pathname === '/program',
 			children: [
 				{ name: 'LIFE', linkTo: '/life' },

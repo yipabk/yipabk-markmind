@@ -57,7 +57,7 @@ export const NavbarItemDropdown = ({ item }: Props) => {
 									{item.children.map((child) => (
 										<a
 											key={child.name}
-											href={child.linkTo}
+											href={item.linkTo + child.linkTo}
 											className='p-3 py-4 pr-10 flex items-start hover:bg-gray-50 border border-t border-t-gray-100'>
 											<p className='text-xs font-medium text-gray-900'>{child.name}</p>
 										</a>
