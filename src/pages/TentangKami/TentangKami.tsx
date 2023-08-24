@@ -16,38 +16,47 @@ import { TeamCard, TeamCardProps } from './TeamCard'
 export const TentangKami = () => {
 	const peoples: TeamCardProps[] = [
 		{
+			id: 'team1',
 			image: team1,
 			title: 'Ketua Dewan Pembina',
 		},
 		{
+			id: 'team2',
 			image: team2,
 			title: 'Anggota Dewan Pembina',
 		},
 		{
+			id: 'team3',
 			image: team3,
 			title: 'Anggota Dewan Pembina',
 		},
 		{
+			id: 'team4',
 			image: team4,
 			title: 'Founder Bentara Campus',
 		},
 		{
+			id: 'team5',
 			image: team5,
 			title: 'Dewan Pengawas',
 		},
 		{
+			id: 'team6',
 			image: team6,
 			title: 'Ketua Dewan Pengurus',
 		},
 		{
+			id: 'team7',
 			image: team7,
 			title: 'Wakil Ketua Dewan Pengurus',
 		},
 		{
+			id: 'team8',
 			image: team8,
 			title: 'Sekretaris Dewan Pengurus',
 		},
 		{
+			id: 'team9',
 			image: team9,
 			title: 'Bendahara Dewan Pengurus',
 		},
@@ -160,7 +169,7 @@ export const TentangKami = () => {
 						key={maxItem}
 						items={peoples}
 						maxItemPerView={maxItem}
-						renderItem={(item) => <TeamCard key={item.title} {...item} />}
+						renderItem={(item) => <TeamCard key={`${item.title}-${item.id}`} {...item} />}
 					/>
 				</div>
 			</div>

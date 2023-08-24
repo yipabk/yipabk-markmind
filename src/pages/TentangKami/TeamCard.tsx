@@ -1,6 +1,7 @@
 import { FC } from 'react'
 
 export interface TeamCardProps {
+	id: string
 	image: string
 	title: string
 }
@@ -15,7 +16,7 @@ export const TeamCard: FC<TeamCardProps> = ({ image, title }) => {
 				<img src={image} width={222} height={222} alt='' />
 			</div>
 			<div
-				className='text-white p-4 flex justify-center items-center relative z-20 text-center font-montserrat h-[80px]'
+				className='text-white p-4 max-w-[222px] flex justify-center items-center relative z-20 text-center font-montserrat h-[80px]'
 				style={{ background: 'linear-gradient(180deg, #6CB4BE 25.31%, rgba(108, 180, 190, 0.00) 100%)' }}>
 				{title}
 			</div>
