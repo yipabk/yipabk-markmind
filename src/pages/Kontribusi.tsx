@@ -7,21 +7,35 @@ export const Kontribusi = () => {
 	return (
 		<div>
 			<FadingHeader variant='black' bg={background} className='flex flex-col justify-end items-center h-[100vh] w-full'>
-				<div className='text-white font-display text-5xl mb-16'>DONASI</div>
-				<div className='text-white font-display text-3xl mb-8 tracking-wide text-center'>
+				<div data-aos='fade-down' data-aos-once='true' className='text-white font-display text-5xl mb-16'>
+					DONASI
+				</div>
+				<div
+					data-aos='fade-down'
+					data-aos-once='true'
+					className='text-white font-display text-3xl mb-8 tracking-wide text-center'>
 					"Giving is the GREATEST Act of GRACE"
 				</div>
-				<div className='text-orange text-xl font-medium w-1/2 text-center mb-[15vh] tracking-wide'>
+				<div
+					data-aos='fade-down'
+					data-aos-once='true'
+					className='text-orange text-xl font-medium w-1/2 text-center mb-[15vh] tracking-wide'>
 					Mari salurkan donasi Anda melalui rekening YIPABK untuk bersama wujudkan mimpi anak berkebutuhan khusus!
 				</div>
 			</FadingHeader>
 			<div className='flex flex-col justify-center items-center min-h-[80vh] w-full bg-blue/40 gap-12 p-8'>
 				<div className='flex flex-col lg:flex-row items-center gap-12'>
-					<div className='whitespace-pre-line font-bold text-[22px] text-center lg:text-start'>
+					<div
+						data-aos='fade-right'
+						data-aos-once='true'
+						className='whitespace-pre-line font-bold text-[22px] text-center lg:text-start'>
 						{`Scan QR code atau
             transfer untuk berdonasi!`}
 					</div>
-					<div className='flex flex-col md:flex-row bg-white rounded-lg drop-shadow-md max-w-[662px]'>
+					<div
+						data-aos='fade-left'
+						data-aos-once='true'
+						className='flex flex-col md:flex-row bg-white rounded-lg drop-shadow-md max-w-[662px]'>
 						<div className='p-1 flex justify-center items-center'>
 							<img width={236} height={243} src={qr} className='mr-2'></img>
 						</div>
@@ -38,7 +52,11 @@ export const Kontribusi = () => {
 						</div>
 					</div>
 				</div>
-				<div className='font-montserrat text-sm md:text-[19px] max-w-4xl text-center'>
+				<div
+					data-aos='fade-up'
+					data-aos-once='true'
+					data-aos-delay='200'
+					className='font-montserrat text-sm md:text-[19px] max-w-4xl text-center'>
 					Kontribusi yang Anda berikan akan digunakan untuk meningkatkan akses pendidikan inklusi di Indonesia melalui
 					berbagai kegiatan dan program YIPABK.
 				</div>
