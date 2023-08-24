@@ -8,6 +8,7 @@ import team6 from '../../assets/images/team-6.png'
 import team7 from '../../assets/images/team-7.png'
 import team8 from '../../assets/images/team-8.png'
 import team9 from '../../assets/images/team-9.png'
+import hero from '../../assets/images/tentang-kami-hero.png'
 import { FadingHeader } from '../../components/commons/FadingHeader'
 import { Slider } from '../../components/commons/Slider'
 import useWindowDimensions from '../../helpers/useWindowDimension'
@@ -81,10 +82,7 @@ export const TentangKami = () => {
 
 	return (
 		<div>
-			<FadingHeader
-				variant='black'
-				className='flex justify-center items-end w-full h-[50vh]'
-				bg='https://images.fineartamerica.com/images-medium-large/attentive-cat-in-black-and-white-alex-ag.jpg'>
+			<FadingHeader variant='black' className='flex justify-center items-end w-full h-[50vh]' bg={hero}>
 				<div className='text-white font-display text-5xl mb-12 tracking-wide'>TENTANG KAMI</div>
 			</FadingHeader>
 			<div>

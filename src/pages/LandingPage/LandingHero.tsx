@@ -1,4 +1,5 @@
 import Button from '../../components/Button'
+import video from '../../assets/videos/video.mp4'
 
 export const LandingHero = () => {
 	return (
@@ -27,11 +28,7 @@ export const LandingHero = () => {
 					<Button>Intip Kegiatan Kami</Button>
 				</div>
 
-				<img
-					className='absolute left-0 top-0 object-cover w-full h-full z-[-2]'
-					src='https://www.thesprucepets.com/thmb/uQnGtOt9VQiML2oG2YzAmPErrHo=/5441x0/filters:no_upscale():strip_icc()/all-about-tabby-cats-552489-hero-a23a9118af8c477b914a0a1570d4f787.jpg'
-					alt=''
-				/>
+				<video autoPlay muted loop className='absolute left-0 top-0 object-cover w-full h-full z-[-2]' src={video} />
 
 				<div className='absolute left-0 top-0 w-full h-full bg-gradient-to-r from-black/75 to-transparent z-[-1]'></div>
 			</div>
