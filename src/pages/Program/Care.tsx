@@ -3,7 +3,7 @@ import { FadingHeader } from '../../components/commons/FadingHeader'
 export const Care = () => {
     return (
         <div>
-            <FadingHeader
+            <FadingHeader variant='black'
                 bg='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/600001c3-7f2c-4f7e-88ba-50856e624266/dezkps2-08966b41-8889-4c90-8d38-5e20018568c4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwMDAwMWMzLTdmMmMtNGY3ZS04OGJhLTUwODU2ZTYyNDI2NlwvZGV6a3BzMi0wODk2NmI0MS04ODg5LTRjOTAtOGQzOC01ZTIwMDE4NTY4YzQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Cyn8s4vZWIyZ4ovptutoH87LtpN-3IDWe1hc4jYe5a4'
                 className='flex flex-col justify-end items-center h-[100vh] w-full'>
                 <div className='text-white font-display text-5xl mb-16'>CARE</div>
