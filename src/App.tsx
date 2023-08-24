@@ -10,8 +10,9 @@ import { Care } from './pages/Program/Care'
 import { Life } from './pages/Program/Life'
 import { Raise } from './pages/Program/Raise'
 import { Teach } from './pages/Program/Teach'
-import { Publikasi } from './pages/Publikasi'
+import { Publikasi } from './pages/Publikasi/Publikasi'
 import { TentangKami } from './pages/TentangKami/TentangKami'
+import { BeritaTerkini } from './pages/Publikasi/BeritaTerkini/BeritaTerkini'
 
 function App() {
 	AOS.init()
@@ -24,7 +25,10 @@ function App() {
 					<Route path='kontribusi' element={<Kontribusi />} />
 					<Route path='tentang-kami' element={<TentangKami />} />
 					<Route path='partner' element={<Partner />} />
-					<Route path='publikasi' element={<Publikasi />} />
+					<Route path='publikasi'>
+						<Route index element={<Publikasi />} />
+						<Route path='berita-terkini' element={<BeritaTerkini />} />
+					</Route>
 					<Route path='program'>
 						<Route path='life' element={<Life />} />
 						<Route path='raise' element={<Raise />} />
