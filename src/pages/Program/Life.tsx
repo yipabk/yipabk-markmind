@@ -7,12 +7,12 @@ export const Life = () => {
                 bg='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/600001c3-7f2c-4f7e-88ba-50856e624266/dezkps2-08966b41-8889-4c90-8d38-5e20018568c4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwMDAwMWMzLTdmMmMtNGY3ZS04OGJhLTUwODU2ZTYyNDI2NlwvZGV6a3BzMi0wODk2NmI0MS04ODg5LTRjOTAtOGQzOC01ZTIwMDE4NTY4YzQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Cyn8s4vZWIyZ4ovptutoH87LtpN-3IDWe1hc4jYe5a4'
                 className='flex flex-col justify-end items-center h-[100vh] w-full'>
                 <div className='text-white font-display text-5xl mb-16'>LIFE</div>
-                <div className='text-grey font-display text-5xl mb-16'>(Learning Intevention Family Equipt)</div>
+                <div className='text-center text-grey font-display text-5xl mb-16'>(Learning Intevention Family Equipt)</div>
             </FadingHeader>
             <div className='flex flex-col justify-center items-center w-100 min-h-[100vh] px-6 w-full bg-blue/40 gap-12'>
                 <div className='flex flex-col bg-white w-full justify-center items-center min-h-[100vh]'>
-                    <div className="pt-8 text-base font-semibold leading-7">
-                        Program bantuan bagi anak dan orang tua/wali anak yang mengalami gangguan perkebangan dan kesulitan dalam mengikuti pembelajaran di sekolah.
+                    <div className="pt-8 text-base font-semibold leading-7 text-center">
+                        Program bantuan bagi anak dan orang tua/wali anak yang mengalami gangguan perkembangan dan kesulitan dalam mengikuti pembelajaran di sekolah.
                     </div>
                     <div className='flex md:flex-row flex-col-reverse md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 items-center w-100 gap-16 md:gap-4'>
                         <div className='flex w-full justify-center'>
@@ -23,7 +23,7 @@ export const Life = () => {
                                 />
                             </div>
                         </div>
-                        <div className='text-black mr-10'>
+                        <div className='text-black ml-10'>
                             <div className='text-3xl lg:text-5xl tracking-wide mb-6 font-display'>1. Program "Aku Bisa Belajar"</div>
                             <div className='text-sm lg:text-base font-light w-[16rem] sm:w-[24rem] lg:w-[34rem] leading-5 text-justify'>
                                 <div className='mb-4'>
@@ -38,7 +38,7 @@ export const Life = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex md:flex-row flex-col-reverse md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 items-center w-100 gap-16 md:gap-4'>
+                    <div className='flex md:flex-row flex-col md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 items-center w-100 gap-16 md:gap-4'>
                         <div className='text-black mr-10'>
                             <div className='text-3xl lg:text-5xl tracking-wide mb-6 font-display'>2. Program "Kita Bisa"</div>
                             <div className='text-sm lg:text-base font-light w-[16rem] sm:w-[24rem] lg:w-[34rem] leading-5 text-justify'>
@@ -71,7 +71,7 @@ export const Life = () => {
                                 />
                             </div>
                         </div>
-                        <div className='text-black mr-10'>
+                        <div className='text-black ml-10'>
                             <div className='text-3xl lg:text-5xl tracking-wide mb-6 font-display'>3. Program Penanganan Anak</div>
                             <div className='text-sm lg:text-base font-light w-[16rem] sm:w-[24rem] lg:w-[34rem] leading-5 text-justify'>
                                 <div className='mb-4'>

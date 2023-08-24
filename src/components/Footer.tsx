@@ -60,7 +60,7 @@ export const Footer = () => {
 							<div>Facebook</div>
 						</div>
 					</div>
-					<div className='flex flex-col lg:col-span-2 lg:items-center'>
+					<div className='flex flex-col items-start lg:col-span-2 lg:items-center'>
 						<p className='text-gray-500 text-base font-bold uppercase'>Didukung oleh</p>
 						<img className='h-[90px]' src={dewaweb} alt='Company name' />
 					</div>

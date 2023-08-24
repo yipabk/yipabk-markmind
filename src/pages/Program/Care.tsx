@@ -7,14 +7,14 @@ export const Care = () => {
                 bg='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/600001c3-7f2c-4f7e-88ba-50856e624266/dezkps2-08966b41-8889-4c90-8d38-5e20018568c4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYwMDAwMWMzLTdmMmMtNGY3ZS04OGJhLTUwODU2ZTYyNDI2NlwvZGV6a3BzMi0wODk2NmI0MS04ODg5LTRjOTAtOGQzOC01ZTIwMDE4NTY4YzQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Cyn8s4vZWIyZ4ovptutoH87LtpN-3IDWe1hc4jYe5a4'
                 className='flex flex-col justify-end items-center h-[100vh] w-full'>
                 <div className='text-white font-display text-5xl mb-16'>CARE</div>
-                <div className='text-grey font-display text-5xl mb-16'>(Resource, Awareness, Inspiration, Stories, Education)</div>
+                <div className='text-grey text-center font-display text-5xl mb-16'>(Resource, Awareness, Inspiration, Stories, Education)</div>
             </FadingHeader>
             <div className='flex flex-col justify-center items-center w-100 min-h-[100vh] px-6 w-full bg-blue/40 gap-12'>
                 <div className='flex flex-col bg-white w-full justify-center items-center min-h-[100vh]'>
-                    <div className='flex md:flex-col flex-col-reverse md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 w-full gap-16 md:gap-4'>
-                        <div className='text-3xl lg:text-5xl tracking-wide mb-6 font-display'>1. Program "YIPPIE"</div>
-                        <div className='flex md:flex-row flex-col-reverse'>
-                            <div className='text-black mr-10'>
+                    <div className='flex md:flex-col flex-col items-center sm:items-start px-4 md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 w-full gap-4'>
+                        <div className='text-3xl lg:text-5xl tracking-wide font-display '>1. Program "YIPPIE"</div>
+                        <div className='flex sm:flex-row flex-col-reverse'>
+                            <div className='text-black md:mr-10'>
                                 <div className='text-sm lg:text-base font-light w-[16rem] sm:w-[24rem] lg:w-[34rem] leading-5 text-justify'>
                                     <div className='mb-4'>
                                         Program “Kita Bisa” merupakan program layanan pendampingan bagi orang tua dengan anak berkebutuhan khusus.
@@ -37,10 +37,10 @@ export const Care = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex md:flex-col flex-col-reverse md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 w-full gap-16 md:gap-4'>
-                        <div className='text-3xl lg:text-5xl tracking-wide mb-6 font-display'>2. #PEDULICHALLENGE - Care Package</div>
-                        <div className='flex md:flex-row flex-col-reverse'>
-                            <div className='text-black mr-10'>
+                    <div className='flex md:flex-col flex-col md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 w-full gap-4'>
+                        <div className='text-3xl mx-4 md:mx-0 lg:text-5xl tracking-wide mb-6 font-display'>2. #PEDULICHALLENGE - Care Package</div>
+                        <div className='flex md:flex-row flex-col'>
+                            <div className='text-black mx-4 md:mx-0'>
                                 <div className='text-sm lg:text-base font-light leading-5 text-justify'>
                                     <div className='mb-4'>
                                         Program “Kita Bisa” merupakan program layanan pendampingan bagi orang tua dengan anak berkebutuhan khusus.
@@ -54,7 +54,7 @@ export const Care = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex md:flex-row flex-col-reverse'>
+                        <div className='flex md:flex-row flex-col'>
                             <div className='flex w-full justify-center'>
                                 <div className='relative w-[15rem] h-[15rem] md:w-[17rem] md:h-[17rem] xl:w-[30rem] xl:h-[30rem]'>
                                     <img
