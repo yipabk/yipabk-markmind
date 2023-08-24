@@ -6,9 +6,14 @@ export const Partner = () => {
 	return (
 		<div>
 			<FadingHeader variant='black' bg={background} className='flex flex-col justify-end items-center h-[50vh] w-full'>
-				<div className='text-white font-display text-5xl mb-16'>PARTNER</div>
+				<div data-aos='fade-up' data-aos-once='true' className='text-white font-display text-5xl mb-16'>
+					PARTNER
+				</div>
 			</FadingHeader>
-			<div className='py-24 px-16 lg:px-48 whitespace-pre-line lg:text-[20px] text-base font-montserrat text-start'>
+			<div
+				data-aos='fade-down'
+				data-aos-once='true'
+				className='py-24 px-16 lg:px-48 whitespace-pre-line lg:text-[20px] text-base font-montserrat text-start'>
 				{`Mewujudkan pendidikan yang merata bagi generasi penerus bangsa tidak dapat kami lakukan sendiri. Kolaborasi dengan berbagai entitas memungkinkan YIPABK untuk bisa menjangkau lebih banyak ABK di Indonesia sekaligus memberikan bantuan secara menyeluruh. 
 				
 				Mari bergabung menjadi partner YIPABK untuk menyalurkan kepedulian

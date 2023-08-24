@@ -41,9 +41,9 @@ export const Navbar = () => {
 			linkTo: '/publikasi',
 			isActive: pathname === '/publikasi',
 			children: [
-				{ name: 'BERITA TERKINI', linkTo: '/publikasi#berita-terkini' },
-				{ name: 'ARTIKEL', linkTo: '/artikel' },
-				{ name: 'NEWSLETTER', linkTo: '/newsletter' },
+				{ name: 'BERITA TERKINI', linkTo: '#berita-terkini' },
+				{ name: 'ARTIKEL', linkTo: '#artikel' },
+				{ name: 'NEWSLETTER', linkTo: '#newsletter' },
 			],
 		},
 	]

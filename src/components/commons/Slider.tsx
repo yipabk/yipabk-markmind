@@ -33,7 +33,7 @@ export function Slider<T>({ items, maxItemPerView, renderItem }: Props<T>) {
 	}
 
 	return (
-		<div className='flex gap-6 items-center ml-auto'>
+		<div data-aos='fade-left' data-aos-once='true' className='flex gap-6 items-center ml-auto'>
 			<div
 				className={`rounded-[100%] w-[56px] h-[56px]  flex justify-center items-center shadow-md ${
 					hasPrev ? 'bg-blue cursor-pointer' : 'bg-blue/20 cursor-not-allowed'

@@ -13,7 +13,7 @@ export const Programs = () => {
 			</div>
 			<div className='grid grid-cols-2 lg:flex'>
 				<ProgramDisplayBox
-					hoverText='TEST'
+					hoverText='Learning Intervention Family Equipt'
 					className='w-[10rem] h-[14rem] sm:w-[12rem] sm:h-[16rem] xl:w-[16rem] xl:h-[20rem] m-2'
 					bgImage={life}>
 					LIFE
@@ -25,13 +25,13 @@ export const Programs = () => {
 					RAISE
 				</ProgramDisplayBox>
 				<ProgramDisplayBox
-					hoverText='TEST'
+					hoverText='TEACH'
 					className='w-[10rem] h-[14rem] sm:w-[12rem] sm:h-[16rem] xl:w-[16rem] xl:h-[20rem] m-2'
 					bgImage={teach}>
 					TEACH
 				</ProgramDisplayBox>
 				<ProgramDisplayBox
-					hoverText='TEST'
+					hoverText='Companionship, Assistance, Recharge, Encouragement'
 					className='w-[10rem] h-[14rem] sm:w-[12rem] sm:h-[16rem] xl:w-[16rem] xl:h-[20rem] m-2'
 					bgImage={care}>
 					CARE
