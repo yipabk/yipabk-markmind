@@ -1,6 +1,4 @@
 import { useState, ReactNode } from 'react'
-import 'swiper/css'
-import 'swiper/css/navigation'
 import { ArrowLeft } from '../icons/ArrowLeft'
 import { ArrowRight } from '../icons/ArrowRight'
 
