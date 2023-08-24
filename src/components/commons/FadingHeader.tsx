@@ -1,6 +1,33 @@
-import React from 'react'
+import React from "react";
 
 interface HeaderProps {
+<<<<<<< HEAD
+  children?: React.ReactNode;
+  bg: string;
+  color?: string;
+  className?: string;
+}
+
+export const FadingHeader = ({
+  children = null,
+  bg,
+  color = "black",
+  className = "",
+}: HeaderProps) => {
+  return (
+    <div className={`relative overflow-hidden ${className}`}>
+      {children}
+      <div
+        className={`absolute w-full h-full z-[-1] bg-gradient-to-t from-black via-30% via-${color} to-transparent`}
+      ></div>
+      <img
+        className="absolute w-full h-full object-cover z-[-2]"
+        src={bg}
+      ></img>
+    </div>
+  );
+};
+=======
 	children?: React.ReactNode
 	bg: string
 	variant: 'black' | 'blue'
@@ -19,3 +46,4 @@ export const FadingHeader = ({ children = null, bg, className = '', variant }: H
 		</div>
 	)
 }
+>>>>>>> b192ddd0014e47272d332b71afd8b57ace91b043
