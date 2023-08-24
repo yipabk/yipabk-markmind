@@ -14,7 +14,7 @@ export const Partner = () => {
 				Mari bergabung menjadi partner YIPABK untuk menyalurkan kepedulian
 				instansi Anda akan masa depan generasi muda Indonesia!`}
 			</div>
-			<div className='flex flex-col justify-center items-center w-100 min-h-[100vh] px-6'>
+			<div className='flex flex-col justify-center items-center w-100 min-h-[80vh] px-6'>
 				<Partners title='Mereka yang' subtitle='#PeduliABK' />
 			</div>
 		</div>
