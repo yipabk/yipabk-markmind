@@ -15,16 +15,21 @@ export const BeritaTerkini = () => {
 	return (
 		<div>
 			<FadingHeader variant='black' bg={hero} className='flex flex-col justify-end items-center h-[45vh] w-full'>
-				<div className='text-white font-display text-5xl mb-16'>PUBLIKASI</div>
+				<div data-aos='fade-down' data-aos-once='true' className='text-white font-display text-5xl mb-16'>
+					PUBLIKASI
+				</div>
 			</FadingHeader>
 			<div className='flex flex-col justify-center items-center w-100 min-h-[100vh] px-4 md:px-16 w-full bg-blue/40 gap-12'>
 				<div className='flex flex-col bg-white w-full py-16 min-h-[100vh] gap-24'>
 					<div className='flex flex-col gap-20'>
-						<div className='whitespace-pre-line font-montserrat text-2xl md:text-[32px] font-bold text-center'>
+						<div
+							data-aos='fade-up'
+							data-aos-once='true'
+							className='whitespace-pre-line font-montserrat text-2xl md:text-[32px] font-bold text-center'>
 							{`Aku dan Guru Bisa Belajar
                 Bersama MDRT Foundation`}
 						</div>
-						<div className='flex flex-wrap items-center gap-24 justify-center'>
+						<div data-aos='fade-up' data-aos-once='true' className='flex flex-wrap items-center gap-24 justify-center'>
 							<img src={bentara} alt='' />
 							<img src={mdrt} alt='' />
 							<img src={peace} alt='' />
@@ -32,7 +37,10 @@ export const BeritaTerkini = () => {
 					</div>
 					<div className='flex flex-col gap-40'>
 						<div className='flex flex-col lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-8'>
-							<div className='flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
+							<div
+								data-aos='fade-right'
+								data-aos-once='true'
+								className='flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
 								<div className='whitespace-pre-line'>
 									{`Menurut data statistik dari Kemendikbudristek, dari 66,6 juta penduduk
 								di tahun 2021, kisaran disabilitas anak usia 5-19 tahun mencapai angka
@@ -54,13 +62,13 @@ export const BeritaTerkini = () => {
 									 sekolah negeri.`}
 								</div>
 							</div>
-							<div className='flex flex-col gap-8'>
+							<div data-aos='fade-left' data-aos-once='true' className='flex flex-col gap-8'>
 								<img src={image1} alt='' />
 								<img src={image2} alt='' />
 							</div>
 						</div>
 						<div className='flex flex-col-reverse lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-6'>
-							<div className='flex flex-col gap-6'>
+							<div data-aos='fade-right' data-aos-once='true' className='flex flex-col gap-6'>
 								<img src={image3} alt='' />
 								<div>
 									<img src={image4} alt='' />
@@ -72,7 +80,10 @@ export const BeritaTerkini = () => {
 									</div>
 								</div>
 							</div>
-							<div className='flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
+							<div
+								data-aos='fade-left'
+								data-aos-once='true'
+								className='flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
 								<div className='font-bold text-[32px] leading-10'>Program “Aku Bisa Belajar”</div>
 								<div className='whitespace-pre-line'>
 									{`Program “Aku Bisa Belajar” terdiri dari rangkaian kegiatan yang 
@@ -94,7 +105,10 @@ export const BeritaTerkini = () => {
 							</div>
 						</div>
 						<div className='flex flex-col lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-6'>
-							<div className='flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
+							<div
+								data-aos='fade-right'
+								data-aos-once='true'
+								className='flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
 								<div className='font-bold text-[32px] leading-10'>Program “Guru Bisa Belajar”</div>
 								<div>
 									<div className='whitespace-pre-line'>
@@ -123,7 +137,10 @@ export const BeritaTerkini = () => {
 									</div>
 								</div>
 							</div>
-							<div className='grid grid-cols-2 grid-rows-2 gap-6 max-h-[426px]'>
+							<div
+								data-aos='fade-left'
+								data-aos-once='true'
+								className='grid grid-cols-2 grid-rows-2 gap-6 max-h-[426px]'>
 								<div>
 									<img className='w-full h-full' src={image5} alt='' />
 								</div>
@@ -136,7 +153,12 @@ export const BeritaTerkini = () => {
 							</div>
 						</div>
 					</div>
-					<div className='font-montserrat px-8 text-sm lg:text-[20px] font-bold whitespace-pre-line text-center'>
+					<div
+						data-aos='fade-up'
+						data-aos-once='true'
+						data-aos-offset='400'
+						data-aos-delay='200'
+						className='font-montserrat px-8 text-sm lg:text-[20px] font-bold whitespace-pre-line text-center'>
 						{`Terima kasih yang sebesar-besarnya kepada MDRT Foundation atas kepercayaan dan dukungan 
 						yang telah diberikan kepada YIPABK dalam usaha kami memperjuangkan pemenuhan hak 
 						pendidikan bagi anak berkebutuhan khusus. Semoga bantuan ini dapat memberikan dampak
