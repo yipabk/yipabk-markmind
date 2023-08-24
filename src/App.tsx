@@ -1,5 +1,5 @@
 import AOS from 'aos'
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css' // You can also use <link> for styles
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Footer } from './components/Footer'
 import { Navbar } from './components/Navbar/Navbar'
@@ -25,10 +25,12 @@ function App() {
 					<Route path='tentang-kami' element={<TentangKami />} />
 					<Route path='partner' element={<Partner />} />
 					<Route path='publikasi' element={<Publikasi />} />
-					<Route path='program/life' element={<Life />} />
-					<Route path='program/raise' element={<Raise />} />
-					<Route path='program/teach' element={<Teach />} />
-					<Route path='program/care' element={<Care />} />
+					<Route path='program'>
+						<Route path='life' element={<Life />} />
+						<Route path='raise' element={<Raise />} />
+						<Route path='teach' element={<Teach />} />
+						<Route path='care' element={<Care />} />
+					</Route>
 				</Routes>
 				<Footer />
 			</BrowserRouter>
