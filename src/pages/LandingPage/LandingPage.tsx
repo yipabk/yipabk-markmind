@@ -6,7 +6,7 @@ import { Programs } from './Programs'
 
 function LandingPage() {
 	return (
-		<div className='mt-[92px]'>
+		<div className='mt-[79px]'>
 			<LandingHero />
 			<AboutUs />
 			<Programs />

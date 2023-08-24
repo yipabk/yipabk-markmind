@@ -10,8 +10,10 @@ interface BoxProps {
 function ProgramDisplayBox(props: BoxProps) {
 	return (
 		<div
+			data-aos='fade-up'
+			data-aos-once='true'
 			className={`flex justify-center items-center relative overflow-hidden group cursor-pointer ${props.className}`}>
-			<div className='top-0 left-0 bg-brown/50 group-hover:bg-transparent duration-200 absolute w-full h-full z-[-1]'></div>
+			<div className='top-0 left-0 bg-brown/50 mix-blend-multiply group-hover:bg-transparent duration-200 absolute w-full h-full z-[-1]'></div>
 			<img className='top-0 left-0 absolute object-cover w-full h-full z-[-2]' src={props.bgImage}></img>
 			<div className={`text-white font-display text-4xl md:text-5xl opacity-100 group-hover:opacity-0 duration-200`}>
 				{props.children}
