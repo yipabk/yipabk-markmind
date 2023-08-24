@@ -7,12 +7,14 @@ import { TentangKami } from "./pages/TentangKami";
 import { Partner } from "./pages/Partner";
 import { Publikasi } from "./pages/Publikasi";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import AOS from 'aos';
 import { Life } from './pages/Program/Life'
 import { Raise } from './pages/Program/Raise'
 import { Teach } from './pages/Program/Teach'
 import { Care } from './pages/Program/Care'
 
 function App() {
+  AOS.init()
   return (
     <div className="flex flex-col">
       <BrowserRouter>
@@ -34,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
