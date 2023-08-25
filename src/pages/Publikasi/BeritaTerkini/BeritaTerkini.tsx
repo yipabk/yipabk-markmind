@@ -1,8 +1,4 @@
-import { FadingHeader } from '../../../components/commons/FadingHeader'
-import hero from '../../../assets/images/publikasi-hero.png'
 import bentara from '../../../assets/images/berita-terkini/bentara.png'
-import peace from '../../../assets/images/berita-terkini/peace.png'
-import mdrt from '../../../assets/images/berita-terkini/mdrt.png'
 import image1 from '../../../assets/images/berita-terkini/image-1.png'
 import image2 from '../../../assets/images/berita-terkini/image-2.png'
 import image3 from '../../../assets/images/berita-terkini/image-3.png'
@@ -10,15 +6,14 @@ import image4 from '../../../assets/images/berita-terkini/image-4.png'
 import image5 from '../../../assets/images/berita-terkini/image-5.png'
 import image6 from '../../../assets/images/berita-terkini/image-6.png'
 import image7 from '../../../assets/images/berita-terkini/image-7.png'
+import mdrt from '../../../assets/images/berita-terkini/mdrt.png'
+import peace from '../../../assets/images/berita-terkini/peace.png'
+import { PublikasiHero } from '../PublikasiHero'
 
 export const BeritaTerkini = () => {
 	return (
 		<div>
-			<FadingHeader variant='black' bg={hero} className='flex flex-col justify-end items-center h-[45vh] w-full'>
-				<div data-aos='fade-down' data-aos-once='true' className='text-white font-display text-5xl mb-16'>
-					PUBLIKASI
-				</div>
-			</FadingHeader>
+			<PublikasiHero />
 			<div className='flex flex-col justify-center items-center w-100 min-h-[100vh] px-4 md:px-16 w-full bg-blue/40 gap-12'>
 				<div className='flex flex-col bg-white w-full py-16 min-h-[100vh] gap-24'>
 					<div className='flex flex-col gap-20'>

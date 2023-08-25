@@ -13,6 +13,10 @@ import { Teach } from './pages/Program/Teach'
 import { Publikasi } from './pages/Publikasi/Publikasi'
 import { TentangKami } from './pages/TentangKami/TentangKami'
 import { BeritaTerkini } from './pages/Publikasi/BeritaTerkini/BeritaTerkini'
+import { Dyspraxia } from './pages/Publikasi/Artikel/Dyspraxia'
+import { Dyslexia } from './pages/Publikasi/Artikel/Dyslexia'
+import { Autism } from './pages/Publikasi/Artikel/Autism'
+import { Adhd } from './pages/Publikasi/Artikel/Adhd'
 
 function App() {
 	AOS.init()
@@ -34,6 +38,12 @@ function App() {
 						<Route path='raise' element={<Raise />} />
 						<Route path='teach' element={<Teach />} />
 						<Route path='care' element={<Care />} />
+					</Route>
+					<Route path='artikel'>
+						<Route path='dyspraxia' element={<Dyspraxia />} />
+						<Route path='dyslexia' element={<Dyslexia />} />
+						<Route path='autism' element={<Autism />} />
+						<Route path='adhd' element={<Adhd />} />
 					</Route>
 				</Routes>
 				<Footer />
