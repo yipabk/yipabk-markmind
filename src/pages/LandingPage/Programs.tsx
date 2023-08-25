@@ -6,7 +6,7 @@ import ProgramDisplayBox from './ProgramDisplayBox'
 
 export const Programs = () => {
 	return (
-		<div className='flex flex-col justify-center items-center w-100 py-24'>
+		<div id='program' className='flex flex-col justify-center items-center w-100 py-24'>
 			<div data-aos='fade-down' data-aos-once='true' className='flex flex-col items-center mb-16 w-full'>
 				<div className='text-3xl md:text-5xl font-display mb-4'>Program-Program Kami</div>
 				<div className='bg-orange h-1 w-[80%] max-w-[42rem]'></div>

@@ -24,8 +24,8 @@ export const LandingHero = () => {
 					data-aos-once='true'
 					data-aos-delay='200'
 					className='flex flex-col sm:flex-row gap-4 w-56 sm:w-auto'>
-					<Button>Tentang Kami</Button>
-					<Button>Intip Kegiatan Kami</Button>
+					<Button linkTo='tentang-kami'>Tentang Kami</Button>
+					<Button linkTo='#program'>Intip Kegiatan Kami</Button>
 				</div>
 
 				<video autoPlay muted loop className='absolute left-0 top-0 object-cover w-full h-full z-[-2]' src={video} />
