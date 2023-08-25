@@ -8,13 +8,13 @@ export const Teach = () => {
                 className='flex flex-col justify-end items-center h-[100vh] w-full'>
                 <div className='text-white font-display text-5xl mb-16'>TEACH</div>
             </FadingHeader>
-            <div className='flex flex-col justify-center items-center w-100 min-h-[100vh] px-6 w-full bg-blue/40 gap-12'>
+            <div className='flex flex-col justify-center items-center min-h-[100vh] px-6 w-full bg-blue/40 gap-12'>
                 <div className='flex flex-col bg-white w-full justify-center items-center min-h-[100vh]'>
-                    <div className="pt-8 text-base font-semibold leading-7">
+                    <div className="pt-8 text-base font-semibold leading-7 text-center">
                         Program bantuan bagi anak dan orang tua/wali anak yang mengalami gangguan perkebangan dan kesulitan dalam mengikuti pembelajaran di sekolah.
                     </div>
                     <div className='flex md:flex-row flex-col w-full md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 gap-16 md:gap-4'>
-                        <div className='text-black mr-10'>
+                        <div className='text-black mx-4 md:mx-0'>
                             <div className='text-3xl lg:text-5xl tracking-wide mb-6 font-display'>1. Program "Aku Bisa Belajar"</div>
                             <div className='text-sm lg:text-base font-light leading-5 text-justify'>
                                 <div className='mb-4'>
@@ -23,8 +23,8 @@ export const Teach = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex md:flex-col flex-col-reverse md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 w-full gap-16 md:gap-4'>
-                        <div className='text-black mr-10'>
+                    <div className='flex md:flex-col flex-col md:px-8 xl:px-24 2xl:px-48 py-24 md:py-48 w-full gap-16 md:gap-4'>
+                        <div className='text-black mx-4 md:mx-0'>
                             <div className='text-3xl lg:text-5xl tracking-wide mb-6 font-display'>1. Program "Aku Bisa Belajar"</div>
                             <div className='text-sm lg:text-base font-light leading-5 text-justify'>
                                 <div className='mb-4'>
@@ -32,9 +32,9 @@ export const Teach = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex md:flex-row flex-col-reverse'>
-                            <div className='text-black mr-10'>
-                                <div className='text-sm lg:text-base font-light w-[16rem] sm:w-[24rem] lg:w-[34rem] leading-5 text-justify'>
+                        <div className='flex md:flex-row flex-col'>
+                            <div className='text-black mx-4 md:mx-0 md:mr-10'>
+                                <div className='text-sm lg:text-base font-light w-full lg:w-[34rem] leading-5 text-justify'>
                                     <div className='mb-4'>
                                         Program “Kita Bisa” merupakan program layanan pendampingan bagi orang tua dengan anak berkebutuhan khusus.
                                     </div>
