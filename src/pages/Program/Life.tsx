@@ -1,20 +1,30 @@
 import { FadingHeader } from '../../components/commons/FadingHeader'
-import hero from '../../assets/images/life-hero.png'
-import life1 from '../../assets/images/life-1.png'
-import life2 from '../../assets/images/life-2.png'
-import life3 from '../../assets/images/life-3.png'
+import hero from '../../assets/images/program/life-hero.png'
+import life1 from '../../assets/images/program/life-1.png'
+import life2 from '../../assets/images/program/life-2.png'
+import life3 from '../../assets/images/program/life-3.png'
 import { SectionWithImage } from '../../components/commons/Section/SectionWithImage'
 
 export const Life = () => {
 	return (
 		<div>
 			<FadingHeader variant='black' bg={hero} className='flex flex-col justify-end items-center h-[50vh] w-full'>
-				<div className='text-white font-display text-5xl mb-16'>LIFE</div>
-				<div className='text-grey font-display text-5xl mb-16'>(Learning Intevention Family Equipt)</div>
+				<div data-aos='fade-down' data-aos-once='true' className='text-white font-display text-3xl lg:text-5xl mb-16'>
+					LIFE
+				</div>
+				<div
+					data-aos='fade-down'
+					data-aos-once='true'
+					className='text-grey text-center font-display text-xl lg-tex-[34px] mb-16 p-x4'>
+					(Learning Intevention Family Equipt)
+				</div>
 			</FadingHeader>
 			<div className='flex flex-col justify-center items-center w-100 min-h-[100vh] px-6 w-full bg-blue/40 gap-12'>
 				<div className='flex flex-col bg-white w-full justify-center items-center min-h-[100vh]'>
-					<div className='pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center'>
+					<div
+						data-aos='fade-up'
+						data-aos-once='true'
+						className='pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center'>
 						{`Program bantuan bagi anak dan orang tua/wali anak yang mengalami gangguan perkembangan
                          dan kesulitan dalam mengikuti pembelajaran di sekolah.`}
 					</div>
