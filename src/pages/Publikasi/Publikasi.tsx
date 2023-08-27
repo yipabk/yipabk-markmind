@@ -71,7 +71,6 @@ export const Publikasi = () => {
 
 	const [maxItem, setMaxItem] = useState(getMaxItem())
 	const targetId = window.location.hash.substring(1)
-	console.log(targetId)
 
 	useEffect(() => {
 		if (refMapping[targetId] !== undefined && refMapping[targetId].current !== null) {
