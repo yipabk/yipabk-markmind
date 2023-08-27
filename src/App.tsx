@@ -26,20 +26,20 @@ function App() {
 				<Navbar></Navbar>
 				<Routes>
 					<Route index element={<LandingPage />} />
-					<Route path='kontribusi' element={<Kontribusi />} />
-					<Route path='tentang-kami' element={<TentangKami />} />
-					<Route path='partner' element={<Partner />} />
-					<Route path='publikasi'>
+					<Route path='/kontribusi' element={<Kontribusi />} />
+					<Route path='/tentang-kami' element={<TentangKami />} />
+					<Route path='/partner' element={<Partner />} />
+					<Route path='/publikasi'>
 						<Route index element={<Publikasi />} />
 						<Route path='berita-terkini' element={<BeritaTerkini />} />
 					</Route>
-					<Route path='program'>
+					<Route path='/program'>
 						<Route path='life' element={<Life />} />
 						<Route path='raise' element={<Raise />} />
 						<Route path='teach' element={<Teach />} />
 						<Route path='care' element={<Care />} />
 					</Route>
-					<Route path='artikel'>
+					<Route path='/artikel'>
 						<Route path='dyspraxia' element={<Dyspraxia />} />
 						<Route path='dyslexia' element={<Dyslexia />} />
 						<Route path='autism' element={<Autism />} />
