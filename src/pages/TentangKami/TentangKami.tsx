@@ -119,7 +119,13 @@ export const TentangKami = () => {
 				</div>
 				<div className='px-6 sm:px-12 md:px-24 lg:px-56 w-full min-h-[80vh] lg:min-h-[100vh] py-16'>
 					<div className='flex flex-col xl:flex-row mb-16 gap-6 lg:gap-16'>
-						<img data-aos='fade-right' data-aos-once='true' className='w-96 h-64 object-cover grayscale' src={visi} alt='' />
+						<img
+							data-aos='fade-right'
+							data-aos-once='true'
+							className='w-96 h-64 object-cover grayscale'
+							src={visi}
+							alt=''
+						/>
 						<div data-aos='fade-left' data-aos-once='true' className='relative'>
 							<div className='font-display text-4xl tracking-wide mb-6'>VISI</div>
 							<div>
@@ -131,7 +137,13 @@ export const TentangKami = () => {
 						</div>
 					</div>
 					<div className='flex flex-col xl:flex-row gap-6 lg:gap-16'>
-						<img data-aos='fade-right' data-aos-once='true' className='w-96 h-64 object-cover grayscale' src={misi} alt='' />
+						<img
+							data-aos='fade-right'
+							data-aos-once='true'
+							className='w-96 h-64 object-cover grayscale'
+							src={misi}
+							alt=''
+						/>
 						<div data-aos='fade-left' data-aos-once='true' className='relative'>
 							<div className='font-display text-4xl tracking-wide mb-6'>MISI</div>
 							<div>
@@ -162,7 +174,7 @@ export const TentangKami = () => {
 					<div
 						data-aos='fade-right'
 						data-aos-once='true'
-						className='text-4xl ml-4 xl:ml-16 whitespace-pre-line text-center xl:text-start font-display underline underline-offset-8 decoration-orange tracking-wide'>
+						className='mr-auto text-4xl ml-4 xl:ml-16 whitespace-pre-line text-center xl:text-start font-display underline underline-offset-8 decoration-orange tracking-wide'>
 						{`Meet Our
 						 Team`}
 					</div>

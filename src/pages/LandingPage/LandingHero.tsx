@@ -22,7 +22,7 @@ export const LandingHero = () => {
 				<div
 					data-aos='fade-down'
 					data-aos-once='true'
-					data-aos-delay='200'
+					data-aos-delay='ro200'
 					className='flex flex-col sm:flex-row gap-4 w-56 sm:w-auto'>
 					<Button linkTo='tentang-kami'>Tentang Kami</Button>
 					<Button linkTo='#program'>Intip Kegiatan Kami</Button>
