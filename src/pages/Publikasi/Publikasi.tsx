@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import publikasi1 from '../../assets/images/publikasi/publikasi-1.png'
 import publikasi2 from '../../assets/images/publikasi/publikasi-2.png'
 import publikasi3 from '../../assets/images/publikasi/publikasi-3.png'
@@ -45,6 +45,17 @@ export const Publikasi = () => {
 			linkTo: '/artikel/adhd',
 		},
 	]
+	const beritaTerkiniRef = useRef<HTMLDivElement>(null)
+	const artikelRef = useRef<HTMLDivElement>(null)
+	const newsletterRef = useRef<HTMLDivElement>(null)
+
+	const refMapping: {
+		[index: string]: React.RefObject<HTMLDivElement>
+	} = {}
+
+	refMapping['berita-terkini'] = beritaTerkiniRef
+	refMapping['artikel'] = artikelRef
+	refMapping['newsletter'] = newsletterRef
 
 	const { width } = useWindowDimensions()
 	const getMaxItem = () => {
@@ -59,6 +70,14 @@ export const Publikasi = () => {
 	}
 
 	const [maxItem, setMaxItem] = useState(getMaxItem())
+	const targetId = window.location.hash.substring(1)
+	console.log(targetId)
+
+	useEffect(() => {
+		if (refMapping[targetId] !== undefined && refMapping[targetId].current !== null) {
+			refMapping[targetId].current?.scrollIntoView()
+		}
+	}, [targetId])
 
 	useEffect(() => {
 		setMaxItem(getMaxItem())
@@ -69,7 +88,7 @@ export const Publikasi = () => {
 			<PublikasiHero />
 
 			<div className='px-4 sm:px-12 lg:px-32 py-16'>
-				<div id='berita-terkini' className='scroll-m-20 min-h-[60vh] mb-32'>
+				<div ref={beritaTerkiniRef} id='berita-terkini' className='scroll-m-20 min-h-[60vh] mb-32'>
 					<div className='text-4xl font-bold my-6'>Berita Terkini</div>
 					<div className='flex flex-col md:flex-row justify-center items-center gap-12 sm:px-16'>
 						<img src={publikasi1} alt='' className='object-cover w-full md:max-w-[288px] lg:max-w-[388px]' />
@@ -89,7 +108,7 @@ export const Publikasi = () => {
 						</div>
 					</div>
 				</div>
-				<div id='artikel' className='scroll-m-20 mb-32 flex flex-col'>
+				<div id='artikel' ref={artikelRef} className='scroll-m-20 mb-32 flex flex-col'>
 					<div className='text-4xl font-bold my-6'>Artikel</div>
 					<Slider<ArtikelSliderCardProps>
 						key={maxItem}
@@ -98,7 +117,7 @@ export const Publikasi = () => {
 						renderItem={(item) => <ArtikelSliderCard key={`${item.title}-${item.id}`} {...item} />}
 					/>
 				</div>
-				<div id='newsletter' className='scroll-m-20 min-h-[60vh] mb-32'>
+				<div id='newsletter' ref={newsletterRef} className='scroll-m-20 min-h-[60vh] mb-32'>
 					<div className='text-4xl font-bold my-6'>Newsletter</div>
 					<div className='flex flex-col md:flex-row justify-center items-center gap-12'>
 						<div className='grid grid-cols-[3fr_2fr] grid-rows-2 gap-1'>
