@@ -85,13 +85,20 @@ export const Publikasi = () => {
 	return (
 		<div>
 			<PublikasiHero />
-
 			<div className='px-4 sm:px-12 lg:px-32 py-16'>
 				<div ref={beritaTerkiniRef} id='berita-terkini' className='scroll-m-20 min-h-[60vh] mb-32'>
-					<div className='text-4xl font-bold my-6'>Berita Terkini</div>
+					<div data-aos='fade-down' data-aos-once='true' className='text-4xl font-bold my-6'>
+						Berita Terkini
+					</div>
 					<div className='flex flex-col md:flex-row justify-center items-center gap-12 sm:px-16'>
-						<img src={publikasi1} alt='' className='object-cover w-full md:max-w-[288px] lg:max-w-[388px]' />
-						<div className='flex flex-col gap-10'>
+						<img
+							data-aos='fade-right'
+							data-aos-once='true'
+							src={publikasi1}
+							alt=''
+							className='object-cover w-full md:max-w-[288px] lg:max-w-[388px]'
+						/>
+						<div data-aos='fade-left' data-aos-once='true' className='flex flex-col gap-10'>
 							<div className='text-4xl font-bold whitespace-pre-line'>
 								{`Aku dan Guru Bisa Belajar 
 								Bersama MDRT Foundation`}
@@ -108,7 +115,9 @@ export const Publikasi = () => {
 					</div>
 				</div>
 				<div id='artikel' ref={artikelRef} className='scroll-m-20 mb-32 flex flex-col'>
-					<div className='text-4xl font-bold my-6'>Artikel</div>
+					<div data-aos='fade-down' data-aos-once='true' className='text-4xl font-bold my-6'>
+						Artikel
+					</div>
 					<Slider<ArtikelSliderCardProps>
 						key={maxItem}
 						items={articles}
@@ -117,9 +126,11 @@ export const Publikasi = () => {
 					/>
 				</div>
 				<div id='newsletter' ref={newsletterRef} className='scroll-m-20 min-h-[60vh] mb-32'>
-					<div className='text-4xl font-bold my-6'>Newsletter</div>
+					<div data-aos='fade-down' data-aos-once='true' className='text-4xl font-bold my-6'>
+						Newsletter
+					</div>
 					<div className='flex flex-col md:flex-row justify-center items-center gap-12'>
-						<div className='grid grid-cols-[3fr_2fr] grid-rows-2 gap-1'>
+						<div data-aos='fade-right' data-aos-once='true' className='grid grid-cols-[3fr_2fr] grid-rows-2 gap-1'>
 							<div className='row-span-2'>
 								<img className='w-full h-full object-cover' src={publikasi2} alt='' />
 							</div>
@@ -131,7 +142,7 @@ export const Publikasi = () => {
 							</div>
 						</div>
 
-						<div className='max-w-md flex flex-col gap-10'>
+						<div data-aos='fade-left' data-aos-once='true' className='max-w-md flex flex-col gap-10'>
 							<div className='text-justify'>
 								Dapatkan informasi terkini seputar kegiatan YIPABK, edukasi terkait anak berkebutuhan khusus, serta
 								cerita dari mereka yang PEDULI setiap bulannya langsung di Inbox Anda!
@@ -149,7 +160,7 @@ export const Publikasi = () => {
 						</div>
 					</div>
 				</div>
-				<div className='min-h-[60vh] mb-32 flex flex-col items-center'>
+				<div data-aos='fade-down' data-aos-once='true' className='min-h-[60vh] mb-32 flex flex-col items-center'>
 					<div className='text-center text-lg md:text-2xl font-bold mb-12'>
 						Daftar <i>Newsletter</i> Kami!
 					</div>
