@@ -1,19 +1,25 @@
+import emailjs from '@emailjs/browser'
 import { useEffect, useRef, useState } from 'react'
+import adhd from '../../assets/images/publikasi/artikel-adhd.png'
+import autism from '../../assets/images/publikasi/artikel-autism.png'
+import dyslexia from '../../assets/images/publikasi/artikel-dyslexia.png'
+import dyspraxia from '../../assets/images/publikasi/artikel-dyspraxia.png'
 import publikasi1 from '../../assets/images/publikasi/publikasi-1.png'
 import publikasi2 from '../../assets/images/publikasi/publikasi-2.png'
 import publikasi3 from '../../assets/images/publikasi/publikasi-3.png'
 import publikasi4 from '../../assets/images/publikasi/publikasi-4.png'
-import dyspraxia from '../../assets/images/publikasi/artikel-dyspraxia.png'
-import dyslexia from '../../assets/images/publikasi/artikel-dyslexia.png'
-import autism from '../../assets/images/publikasi/artikel-autism.png'
-import adhd from '../../assets/images/publikasi/artikel-adhd.png'
 import Button from '../../components/Button'
 import { Slider } from '../../components/commons/Slider'
 import useWindowDimensions from '../../helpers/useWindowDimension'
 import { ArtikelSliderCard, ArtikelSliderCardProps } from './ArtikelSliderCard'
 import { PublikasiHero } from './PublikasiHero'
+import { toast } from 'react-toastify'
 
 export const Publikasi = () => {
+	const serviceId = import.meta.env.VITE_EMAIL_SERVICE_ID
+	const templateId = import.meta.env.VITE_EMAIL_TEMPLATE_ID
+	const apiKey = import.meta.env.VITE_EMAIL_API_KEY
+
 	const articles: ArtikelSliderCardProps[] = [
 		{
 			id: '1',
@@ -48,6 +54,9 @@ export const Publikasi = () => {
 	const beritaTerkiniRef = useRef<HTMLDivElement>(null)
 	const artikelRef = useRef<HTMLDivElement>(null)
 	const newsletterRef = useRef<HTMLDivElement>(null)
+	const [name, setName] = useState('')
+	const [phoneNumber, setPhoneNumber] = useState('')
+	const [email, setEmail] = useState('')
 
 	const refMapping: {
 		[index: string]: React.RefObject<HTMLDivElement>
@@ -77,6 +86,23 @@ export const Publikasi = () => {
 			refMapping[targetId].current?.scrollIntoView()
 		}
 	}, [targetId])
+
+	const handleSendEmail = async () => {
+		const templateParams = {
+			name,
+			phoneNumber,
+			email,
+		}
+
+		try {
+			const res = await emailjs.send(serviceId, templateId, templateParams, apiKey)
+			if (res.status === 200) {
+				toast('Berhasil mendaftar!', { type: 'success' })
+			}
+		} catch (error) {
+			toast('Gagal mendaftar!', { type: 'error' })
+		}
+	}
 
 	useEffect(() => {
 		setMaxItem(getMaxItem())
@@ -167,18 +193,32 @@ export const Publikasi = () => {
 					<div className='w-full justify-center items-center flex flex-col gap-6 mb-12'>
 						<div className='text-lg md:text-2xl font-bold w-full justify-center flex flex-col sm:flex-row items-start sm:items-center gap-2'>
 							<div className='min-w-[5rem] sm:min-w-[10rem]'>Nama</div>
-							<input className='bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]' type='text' />
+							<input
+								className='bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]'
+								onChange={(e) => setName(e.target.value)}
+								type='text'
+							/>
 						</div>
 						<div className='text-lg md:text-2xl font-bold w-full justify-center flex flex-col sm:flex-row items-start sm:items-center gap-2'>
 							<div className='min-w-[5rem] sm:min-w-[10rem]'>No Telp</div>
-							<input className='bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]' type='number' />
+							<input
+								className='bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]'
+								onChange={(e) => setPhoneNumber(e.target.value)}
+								type='number'
+							/>
 						</div>
 						<div className='text-lg md:text-2xl font-bold w-full justify-center flex flex-col sm:flex-row items-start sm:items-center gap-2'>
 							<div className='min-w-[5rem] sm:min-w-[10rem]'>Email</div>
-							<input className='bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]' type='email' />
+							<input
+								className='bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]'
+								onChange={(e) => setEmail(e.target.value)}
+								type='email'
+							/>
 						</div>
 					</div>
-					<Button className='w-96'>Daftar</Button>
+					<Button onClick={handleSendEmail} className='w-96'>
+						Daftar
+					</Button>
 				</div>
 			</div>
 		</div>

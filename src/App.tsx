@@ -1,6 +1,7 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css' // You can also use <link> for styles
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import 'react-toastify/dist/ReactToastify.css'
 import { Footer } from './components/Footer'
 import { Navbar } from './components/Navbar/Navbar'
 import { Kontribusi } from './pages/Kontribusi'
@@ -10,19 +11,21 @@ import { Care } from './pages/Program/Care'
 import { Life } from './pages/Program/Life'
 import { Raise } from './pages/Program/Raise'
 import { Teach } from './pages/Program/Teach'
+import { Adhd } from './pages/Publikasi/Artikel/Adhd'
+import { Autism } from './pages/Publikasi/Artikel/Autism'
+import { Dyslexia } from './pages/Publikasi/Artikel/Dyslexia'
+import { Dyspraxia } from './pages/Publikasi/Artikel/Dyspraxia'
+import { BeritaTerkini } from './pages/Publikasi/BeritaTerkini/BeritaTerkini'
 import { Publikasi } from './pages/Publikasi/Publikasi'
 import { TentangKami } from './pages/TentangKami/TentangKami'
-import { BeritaTerkini } from './pages/Publikasi/BeritaTerkini/BeritaTerkini'
-import { Dyspraxia } from './pages/Publikasi/Artikel/Dyspraxia'
-import { Dyslexia } from './pages/Publikasi/Artikel/Dyslexia'
-import { Autism } from './pages/Publikasi/Artikel/Autism'
-import { Adhd } from './pages/Publikasi/Artikel/Adhd'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
 	AOS.init()
 	return (
 		<div className='flex flex-col'>
 			<BrowserRouter>
+				<ToastContainer position='top-center' />
 				<Navbar></Navbar>
 				<Routes>
 					<Route index element={<LandingPage />} />
