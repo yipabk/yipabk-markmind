@@ -4,10 +4,10 @@ interface ButtonProps {
 	linkTo?: string
 	children: React.ReactNode
 	className?: string
-	onClick: MouseEventHandler<HTMLAnchorElement>
+	onClick?: MouseEventHandler<HTMLAnchorElement>
 }
 
-function Button({ linkTo, children, onClick, className }: ButtonProps) {
+function Button({ linkTo, children, onClick = () => {}, className }: ButtonProps) {
 	return (
 		<a
 			onClick={onClick}
