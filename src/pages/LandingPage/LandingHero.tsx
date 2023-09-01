@@ -14,7 +14,7 @@ export const LandingHero = () => {
 				<div
 					data-aos='fade-right'
 					data-aos-once='true'
-					className='text-base sm:text-base max-w-[26rem] tracking-wide mb-16 font-light text-white'>
+					className='font-montserrat text-base sm:text-base max-w-[26rem] tracking-wide mb-16 font-light text-white'>
 					Lahir dari kepedulian sekelompok pendidik akan masa depan anak berkebutuhan khusus, kami berkomitmen untuk
 					mewujudkan generasi muda Indonesia yang berprestasi lewat pendidikan yang merata.
 				</div>
@@ -24,8 +24,12 @@ export const LandingHero = () => {
 					data-aos-once='true'
 					data-aos-delay='ro200'
 					className='flex flex-col sm:flex-row gap-4 w-56 sm:w-auto'>
-					<Button linkTo='tentang-kami'>Tentang Kami</Button>
-					<Button linkTo='#program'>Intip Kegiatan Kami</Button>
+					<Button className='w-[223px]' linkTo='tentang-kami'>
+						Tentang Kami
+					</Button>
+					<Button className='w-[223px]' linkTo='#program'>
+						Intip Kegiatan Kami
+					</Button>
 				</div>
 
 				<video autoPlay muted loop className='absolute left-0 top-0 object-cover w-full h-full z-[-2]' src={video} />

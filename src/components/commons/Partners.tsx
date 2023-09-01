@@ -23,7 +23,7 @@ export const Partners = ({ title, subtitle }: Props) => {
 
 	return (
 		<div className='flex flex-col items-center'>
-			<div className='font-montserrat text-center text-3xl lg:text-5xl'>{title}</div>
+			<div className='font-display text-center text-3xl lg:text-5xl'>{title}</div>
 			<div className='font-montserrat text-center text-3xl lg:text-5xl font-bold mt-4'>{subtitle}</div>
 			<div className='flex flex-col gap-4 mt-8'>
 				<div className='flex flex-wrap justify-center items-center gap-6'>
