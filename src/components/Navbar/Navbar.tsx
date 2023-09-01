@@ -49,11 +49,15 @@ export const Navbar = () => {
 	]
 
 	return (
-		<Popover className='fixed w-full z-50 bg-white'>
+		<Popover
+			style={{ boxShadow: '0px 4px 4px 0 rgba(0, 0, 0, 0.25)', transformStyle: 'preserve-3d' }}
+			className='fixed w-full z-50 bg-white shadow-md'>
 			{({ open }) => (
 				<>
-					<div className='mx-auto pl-6 pr-6 md:pr-20 font-montserrat'>
-						<div className='flex justify-between items-center border-b-2 border-gray-100 md:space-x-10'>
+					<div style={{ transformStyle: 'preserve-3d' }} className='mx-auto pl-6 pr-6 md:pr-20 font-montserrat'>
+						<div
+							style={{ transformStyle: 'preserve-3d' }}
+							className='flex justify-between items-center border-b-2 border-gray-100 md:space-x-10'>
 							<div className='flex justify-start lg:w-0 lg:flex-1'>
 								<a href='/'>
 									<Logo />
@@ -65,7 +69,10 @@ export const Navbar = () => {
 									<Bars3Icon color='#000' enableBackground='false' height={24} width={24} />
 								</Popover.Button>
 							</div>
-							<Popover.Group as='nav' className='hidden md:flex md:space-x-4 lg:space-x-6'>
+							<Popover.Group
+								as='nav'
+								style={{ transformStyle: 'preserve-3d' }}
+								className='hidden md:flex md:space-x-4 lg:space-x-6'>
 								{availableMenus.map((menu) =>
 									menu.children.length > 0 ? (
 										<NavbarItemDropdown key={`NavItem-${menu.name}`} item={menu} />

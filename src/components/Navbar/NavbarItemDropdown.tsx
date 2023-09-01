@@ -24,7 +24,7 @@ export const NavbarItemDropdown = ({ item }: Props) => {
 	}
 
 	return (
-		<Popover className='relative z-30 flex w-full md:w-auto'>
+		<Popover style={{ transformStyle: 'preserve-3d' }} className='relative z-30 flex w-full md:w-auto'>
 			{() => (
 				<>
 					<Popover.Button
@@ -55,8 +55,9 @@ export const NavbarItemDropdown = ({ item }: Props) => {
 							onMouseEnter={handleHover}
 							onMouseLeave={handleLeave}
 							static
+							style={{ transform: 'translateZ(-20px)' }}
 							className='absolute z-10 top-12 transform max-w-[100px] sm:px-0'>
-							<div className='shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden'>
+							<div className='shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden transform'>
 								<div className='relative grid bg-white'>
 									{item.children.map((child) => (
 										<a
