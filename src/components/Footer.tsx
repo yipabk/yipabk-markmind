@@ -1,10 +1,10 @@
-import { CallIcon } from './icons/CallIcon'
-import { MailIcon } from './icons/MailIcon'
-import instagram from '../assets/icon/instagram.png'
-import facebook from '../assets/icon/facebook.png'
-import youtube from '../assets/icon/youtube.png'
-import { LocationIcon } from './icons/LocationIcon'
-import dewaweb from '../assets/images/dewaweb.png'
+import { CallIcon } from "./icons/CallIcon";
+import { MailIcon } from "./icons/MailIcon";
+import instagram from "../assets/icon/instagram.png";
+import facebook from "../assets/icon/facebook.png";
+import youtube from "../assets/icon/youtube.png";
+import { LocationIcon } from "./icons/LocationIcon";
+import dewaweb from "../assets/images/dewaweb.png";
 
 export const Footer = () => {
 	return (
