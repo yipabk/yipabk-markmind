@@ -12,10 +12,10 @@ export const Footer = () => {
 			<h2 id='footerHeading' className='sr-only'>
 				Footer
 			</h2>
-			<div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
-				<div className='mb-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 xl:mb-0 text-xs md:text-base'>
-					<div className='flex'>
-						<div className='mr-4'>
+			<div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 font-montserrat font-500'>
+				<div className='mb-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 xl:mb-0 md:text-xs'>
+					<div className='flex gap-4'>
+						<div>
 							<LocationIcon />
 						</div>
 						<div>
@@ -25,43 +25,43 @@ export const Footer = () => {
 							<div>Gambir, Jakarta Pusat, DKI Jakarta 10130</div>
 						</div>
 					</div>
-					<div>
-						<div className='flex items-center'>
-							<div className='mr-4'>
+					<div className='flex flex-col gap-1'>
+						<div className='flex items-center gap-4'>
+							<div>
 								<MailIcon />
 							</div>
 							<div>yipabk@gmail.com</div>
 						</div>
-						<div className='flex items-center'>
-							<div className='mr-4'>
+						<div className='flex items-center gap-4'>
+							<div>
 								<CallIcon />
 							</div>
 							<div>+62 813-7070-3429</div>
 						</div>
 					</div>
-					<div>
-						<div className='font-bold'>KONTAK KAMI</div>
-						<div className='flex items-center'>
-							<div className='mr-4'>
+					<div className='flex flex-col gap-1'>
+						<div className='font-bold font-montserrat text-xs mb-1'>KONTAK KAMI</div>
+						<div className='flex items-center gap-4'>
+							<div>
 								<img src={instagram} alt='' />
 							</div>
 							<div>Instagram</div>
 						</div>
-						<div className='flex items-center'>
-							<div className='mr-4'>
+						<div className='flex items-center gap-4'>
+							<div>
 								<img src={youtube} alt='' />
 							</div>
 							<div>Youtube</div>
 						</div>
-						<div className='flex items-center'>
-							<div className='mr-4'>
+						<div className='flex items-center gap-4'>
+							<div>
 								<img src={facebook} alt='' />
 							</div>
 							<div>Facebook</div>
 						</div>
 					</div>
 					<div className='flex flex-col items-start lg:col-span-2 lg:items-center'>
-						<p className='text-gray-500 text-base font-bold uppercase'>Didukung oleh</p>
+						<p className='text-xs font-[500] uppercase font-montserrat'>Didukung oleh</p>
 						<img className='h-[90px]' src={dewaweb} alt='Company name' />
 					</div>
 				</div>
