@@ -24,13 +24,13 @@ export const NavbarItemDropdown = ({ item }: Props) => {
 	}
 
 	return (
-		<Popover className='relative flex w-full md:w-auto'>
+		<Popover className='relative z-30 flex w-full md:w-auto'>
 			{() => (
 				<>
 					<Popover.Button
 						onMouseEnter={handleHover}
 						onMouseLeave={handleLeave}
-						className={`w-full py-2 flex items-center text-center justify-center decoration-orange decoration-2 mx-4 text-xs cursor-pointer hover:opacity-75
+						className={`w-full py-2 flex items-center text-center justify-center decoration-orange decoration-2 text-xs cursor-pointer hover:opacity-75
                   ${item.isActive ? 'font-bold underline underline-offset-8' : 'font-medium'}`}>
 						<span>{item.name}</span>
 						<ChevronDown
@@ -55,15 +55,19 @@ export const NavbarItemDropdown = ({ item }: Props) => {
 							onMouseEnter={handleHover}
 							onMouseLeave={handleLeave}
 							static
-							className='absolute z-10 ml-[25%] md:ml-0 mt-10 transform px-2 max-w-md sm:px-0'>
+							className='absolute z-10 top-12 transform max-w-[100px] sm:px-0'>
 							<div className='shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden'>
 								<div className='relative grid bg-white'>
 									{item.children.map((child) => (
 										<a
 											key={child.name}
 											href={item.linkTo + child.linkTo}
-											className='p-3 py-4 pr-10 flex items-start hover:bg-gray-50 border border-t border-t-gray-100'>
-											<p className='text-xs font-medium text-gray-900'>{child.name}</p>
+											className={`${item.name === 'PROGRAM' && 'p-3 py-4 pr-10'} ${
+												item.name === 'PUBLIKASI' && 'py-4 px-2'
+											} flex items-start hover:bg-gray-50 border border-t border-t-gray-100`}>
+											<p className={`text-xs font-[500] ${item.name === 'PROGRAM' && 'tracking-[2.16px]'} text-black`}>
+												{child.name}
+											</p>
 										</a>
 									))}
 								</div>
