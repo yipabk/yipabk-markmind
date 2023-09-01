@@ -94,23 +94,23 @@ export const TentangKami = () => {
 					data-aos='fade-down'
 					data-aos-once='true'
 					data-aos-delay='200'
-					className='px-6 sm:px-12 md:px-24 lg:px-56 w-full py-12 flex justify-center items-center flex-col'>
+					className='px-6 sm:px-12 md:px-24 lg:px-56 w-full py-12 flex justify-center items-center flex-col font-montserrat font-[400]'>
 					<div className='mb-24'>
-						<div className='mb-6 tracking-wide text-justify'>
+						<div className='mb-6 leading-6 text-justify'>
 							Yayasan Indonesia Peduli Anak Berkebutuhan Khusus (YIPABK) berdiri tahun 2012 dengan akte notaris Linda
 							Herawati Nomor 77 tanggal 28 Juni 2012.
 						</div>
-						<div className='mb-6 tracking-wide text-justify'>
+						<div className='mb-6 leading-6 text-justify'>
 							Melihat besarnya jumlah anak berkebutuhan khusus (ABK) di sekitar yang belum mendapatkan penanganan dan
 							pendidikan sesuai kebutuhan mereka, membangkitkan kepedulian para pendiri YIPABK akan masa depan generasi
 							muda Indonesia.
 						</div>
-						<div className='mb-6 tracking-wide text-justify'>
+						<div className='mb-6 leading-6 text-justify'>
 							Sekelompok pendidik yang terdiri atas guru, orang tua, serta pemerhati anak pun berkumpul dan berpadu
 							tangan, membentuk program-program holistik guna membantu anak dengan ketunaan fisik, mental, kognisi,
 							maupun sosial atau gangguan perilaku.
 						</div>
-						<div className='mb-6 tracking-wide text-justify'>
+						<div className='mb-6 leading-6 text-justify'>
 							Mewujudkan pendidikan yang merata bagi generasi penerus bangsa adalah komitmen kami. YIPABK akan terus
 							berupaya hingga setiap anak Indonesia memperoleh kesempatan yang sama untuk bertumbuh, berkembang, serta
 							menyambut masa depan yang lebih cerah.
@@ -128,7 +128,7 @@ export const TentangKami = () => {
 						/>
 						<div data-aos='fade-left' data-aos-once='true' className='relative'>
 							<div className='font-display text-4xl tracking-wide mb-6'>VISI</div>
-							<div>
+							<div className='font-montserrat'>
 								“Terwujudnya Indonesia dengan anak-anak yang bahagia dan memiliki kesempatan pendidikan yang sama.”
 							</div>
 							<div className='bg-white w-[5.5rem] h-[4.5rem] absolute top-0 left-[-5.5rem]'></div>
@@ -146,7 +146,7 @@ export const TentangKami = () => {
 						/>
 						<div data-aos='fade-left' data-aos-once='true' className='relative'>
 							<div className='font-display text-4xl tracking-wide mb-6'>MISI</div>
-							<div>
+							<div className='font-montserrat'>
 								<div className='font-bold mb-4 '>
 									Advocating, Creating, Educating Special Needs Children in Indonesia
 								</div>
@@ -182,6 +182,7 @@ export const TentangKami = () => {
 						key={maxItem}
 						items={peoples}
 						maxItemPerView={maxItem}
+						showPagination
 						renderItem={(item) => <TeamCard key={`${item.title}-${item.id}`} {...item} />}
 					/>
 				</div>

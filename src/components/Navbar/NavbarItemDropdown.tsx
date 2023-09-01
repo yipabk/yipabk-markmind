@@ -56,7 +56,7 @@ export const NavbarItemDropdown = ({ item }: Props) => {
 							onMouseLeave={handleLeave}
 							static
 							style={{ transform: 'translateZ(-20px)' }}
-							className='absolute z-10 top-12 transform max-w-[100px] sm:px-0'>
+							className='absolute z-10 top-14 transform max-w-[100px] sm:px-0'>
 							<div className='shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden transform'>
 								<div className='relative grid bg-white'>
 									{item.children.map((child) => (

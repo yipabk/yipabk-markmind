@@ -6,9 +6,10 @@ interface Props<T> {
 	items: T[]
 	maxItemPerView: number
 	renderItem: (item: T) => ReactNode
+	showPagination?: boolean
 }
 
-export function Slider<T>({ items, maxItemPerView, renderItem }: Props<T>) {
+export function Slider<T>({ items, maxItemPerView, renderItem, showPagination = false }: Props<T>) {
 	const [visibleItems, setVisibleItems] = useState(items.slice(0, maxItemPerView))
 	const [currentIndex, setCurrentIndex] = useState(0)
 	const hasPrev = currentIndex !== 0
@@ -32,28 +33,48 @@ export function Slider<T>({ items, maxItemPerView, renderItem }: Props<T>) {
 		setVisibleItems(items.slice(newIndex * maxItemPerView, newIndex * maxItemPerView + maxItemPerView))
 	}
 
+	const handlePageClick = (index: number) => {
+		setCurrentIndex(index)
+		setVisibleItems(items.slice(index * maxItemPerView, index * maxItemPerView + maxItemPerView))
+	}
+
 	return (
-		<div
-			data-aos='fade-left'
-			data-aos-once='true'
-			className='grid grid-cols-[56px_1fr_56px] gap-6 justify-between items-center'>
+		<div className='flex flex-col gap-8'>
 			<div
-				className={`rounded-[100%] w-[56px] h-[56px] flex justify-center items-center shadow-md ${
-					hasPrev ? 'bg-blue cursor-pointer' : 'bg-blue/20 cursor-not-allowed'
-				} `}
-				onClick={handlePrev}>
-				<ArrowLeft />
+				data-aos='fade-left'
+				data-aos-once='true'
+				className='grid grid-cols-[56px_1fr_56px] gap-6 justify-between items-center'>
+				<div
+					className={`rounded-[100%] w-[56px] h-[56px] flex justify-center items-center shadow-md ${
+						hasPrev ? 'bg-blue cursor-pointer' : 'bg-blue/20 cursor-not-allowed'
+					} `}
+					onClick={handlePrev}>
+					<ArrowLeft />
+				</div>
+				<div
+					style={{ gridTemplateColumns: `repeat(${maxItemPerView}, 1fr)` }}
+					className={`gap-8 grid max-w-[100%] overflow-hidden`}>
+					{visibleItems.map((item) => renderItem(item))}
+				</div>
+				<div
+					className={`rounded-[100%] w-[56px] h-[56px]  flex justify-center items-center shadow-md ${
+						hasNext ? 'bg-blue cursor-pointer' : 'bg-blue/20 cursor-not-allowed'
+					} `}
+					onClick={handleNext}>
+					<ArrowRight />
+				</div>
 			</div>
-			<div style={{ gridTemplateColumns: `repeat(${maxItemPerView}, 1fr)` }} className={`gap-8 grid`}>
-				{visibleItems.map((item) => renderItem(item))}
-			</div>
-			<div
-				className={`rounded-[100%] w-[56px] h-[56px]  flex justify-center items-center shadow-md ${
-					hasNext ? 'bg-blue cursor-pointer' : 'bg-blue/20 cursor-not-allowed'
-				} `}
-				onClick={handleNext}>
-				<ArrowRight />
-			</div>
+			{showPagination && (
+				<div className='w-full flex justify-center gap-10'>
+					{[...Array(maxItemPerView).keys()].map((val) => (
+						<div
+							onClick={() => handlePageClick(val)}
+							className={`w-[19px] h-[19px] rounded-[100%] ${
+								val === currentIndex ? 'bg-blue ' : 'bg-lightgrey '
+							} cursor-pointer`}></div>
+					))}
+				</div>
+			)}
 		</div>
 	)
 }
