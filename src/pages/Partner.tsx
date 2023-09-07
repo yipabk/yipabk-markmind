@@ -8,7 +8,7 @@ export const Partner = () => {
       <FadingHeader
         variant="black"
         bg={background}
-        className="flex flex-col justify-end items-center  h-[42vh] mt-20 w-full"
+        className="flex flex-col justify-end items-center h-[67vh] w-full"
       >
         <div
           data-aos="fade-up"

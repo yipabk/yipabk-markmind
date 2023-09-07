@@ -18,6 +18,13 @@ export const Teach = () => {
         >
           TEACH
         </div>
+        <div
+          data-aos="fade-down"
+          data-aos-once="true"
+          className="text-grey text-center font-display text-xl lg-tex-[34px] mb-16 p-x4"
+        >
+          (Training, Educators, Ability, Care, & Hard-skill)
+        </div>
       </FadingHeader>
       <div className="flex flex-col justify-center items-center min-h-[100vh] px-6 w-full bg-blue/40 gap-12">
         <div className="flex flex-col bg-white w-full justify-center items-center min-h-[100vh]">
