@@ -1,19 +1,19 @@
-import { CallIcon } from "./icons/CallIcon";
-import { MailIcon } from "./icons/MailIcon";
-import instagram from "../assets/icon/instagram.png";
-import facebook from "../assets/icon/facebook.png";
-import youtube from "../assets/icon/youtube.png";
-import { LocationIcon } from "./icons/LocationIcon";
-import dewaweb from "../assets/images/dewaweb.png";
+import { CallIcon } from './icons/CallIcon'
+import { MailIcon } from './icons/MailIcon'
+import instagram from '../assets/icon/instagram.png'
+import facebook from '../assets/icon/facebook.png'
+import youtube from '../assets/icon/youtube.png'
+import { LocationIcon } from './icons/LocationIcon'
+import dewaweb from '../assets/images/dewaweb.png'
 
 export const Footer = () => {
 	return (
-		<footer className='bg-white' aria-labelledby='footerHeading'>
+		<footer className='bg-lightgrey' aria-labelledby='footerHeading'>
 			<h2 id='footerHeading' className='sr-only'>
 				Footer
 			</h2>
-			<div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 font-montserrat font-500'>
-				<div className='mb-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 xl:mb-0 md:text-xs'>
+			<div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
+				<div className='mb-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 xl:mb-0 text-xs md:text-base'>
 					<div className='flex gap-4'>
 						<div>
 							<LocationIcon />
@@ -65,8 +65,10 @@ export const Footer = () => {
 						<img className='h-[90px]' src={dewaweb} alt='Company name' />
 					</div>
 				</div>
-				<div className='mt-12 border-t border-gray-200 pt-8'>
-					<p className='md:text-base text-xs text-gray-400 xl:text-center'>
+			</div>
+			<div>
+				<div className='flex items-center justify-center bg-grey border-t border-gray-200 py-3'>
+					<p className='md:text-base text-xs font-montserrat font-[500] text-white/90 xl:text-center'>
 						&copy; COPY RIGHT 2023, Yayasan Indonesia Peduli Anak Berkebutuhan Khusus
 					</p>
 				</div>
