@@ -86,7 +86,7 @@ export const TentangKami = () => {
     <div>
       <FadingHeader
         variant="black"
-        className="flex justify-center items-end w-full h-[50vh]"
+        className="flex justify-center items-end w-full h-[42vh] mt-20"
         bg={hero}
       >
         <div

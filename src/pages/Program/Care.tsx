@@ -11,7 +11,7 @@ export const Care = () => {
       <FadingHeader
         variant="black"
         bg={hero}
-        className="flex flex-col justify-end items-center h-[50vh] w-full"
+        className="flex flex-col justify-end items-center h-[42vh] mt-20 w-full"
       >
         <div
           data-aos="fade-down"
