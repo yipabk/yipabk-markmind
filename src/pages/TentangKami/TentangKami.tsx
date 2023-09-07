@@ -107,26 +107,24 @@ export const TentangKami = () => {
           <div className="mb-24">
             <div className="mb-6 leading-6 text-justify">
               Yayasan Indonesia Peduli Anak Berkebutuhan Khusus (YIPABK) berdiri
-              tahun 2012 dengan akte notaris Linda Herawati Nomor 77 tanggal 28
+              tahun 2012 dengan akta notaris Linda Herawati Nomor 77 tanggal 28
               Juni 2012.
             </div>
             <div className="mb-6 leading-6 text-justify">
-              Melihat besarnya jumlah anak berkebutuhan khusus (ABK) di sekitar
-              yang belum mendapatkan penanganan dan pendidikan sesuai kebutuhan
-              mereka, membangkitkan kepedulian para pendiri YIPABK akan masa
-              depan generasi muda Indonesia.
+              YIPABK lahir dari kepedulian sekelompok pendidik (guru, orangtua,
+              dan pemerhati anak) terhadap masa depan anak-anak yang memiliki
+              kondisi kekhususan. Sebab begitu besar jumlah anak-anak di
+              Indonesia, baik yang mengalami ketunaan fisik, mental,
+              intelegensi/kognisi, maupun sosial atau gangguan perilaku, yang
+              masih belum mendapat perhatian terhadap kebutuhan penanganan dan
+              pendidikan mereka.
             </div>
             <div className="mb-6 leading-6 text-justify">
-              Sekelompok pendidik yang terdiri atas guru, orang tua, serta
-              pemerhati anak pun berkumpul dan berpadu tangan, membentuk
-              program-program holistik guna membantu anak dengan ketunaan fisik,
-              mental, kognisi, maupun sosial atau gangguan perilaku.
-            </div>
-            <div className="mb-6 leading-6 text-justify">
-              Mewujudkan pendidikan yang merata bagi generasi penerus bangsa
-              adalah komitmen kami. YIPABK akan terus berupaya hingga setiap
-              anak Indonesia memperoleh kesempatan yang sama untuk bertumbuh,
-              berkembang, serta menyambut masa depan yang lebih cerah.
+              Cikal bakal YIPABK dimulai dari gerakan bersama para pendidik
+              dalam memperhatikan pentingnya penanganan yang tepat dan
+              tersedianya layanan pendidikan yang baik sejak dini untuk membantu
+              anak-anak berkondisi kekhususan tersebut memperoleh kesempatan
+              bertumbuh dan berkembang, dan memiliki hidup yang lebih baik.
             </div>
           </div>
         </div>
