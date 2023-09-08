@@ -128,7 +128,7 @@ export const TentangKami = () => {
             </div>
           </div>
         </div>
-        <div className="px-6 sm:px-12 md:px-24 lg:px-56 w-full min-h-[80vh] lg:min-h-[100vh] py-16">
+        <div className="px-6 sm:px-12 md:px-24 lg:px-56 w-full h-full mb-24 py-16">
           <div className="flex flex-col xl:flex-row mb-16 gap-6 lg:gap-16">
             <img
               data-aos="fade-right"
