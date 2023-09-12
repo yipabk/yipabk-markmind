@@ -40,8 +40,8 @@ export const Life = () => {
           </div>
           <SectionWithImage
             dir="ltr"
-            img={life1}
-            title={'1. Program "Aku Bisa Belajar"'}
+            imgs={[life1,life1]}
+            title={'1. Program Aku Bisa Belajar'}
             content={
               <>
                 <div className="mb-4">
@@ -66,8 +66,8 @@ export const Life = () => {
           />
           <SectionWithImage
             dir="rtl"
-            img={life2}
-            title={'2. Program "Kita Bisa"'}
+            imgs={[life2,life2]}
+            title={'2. Program Kita Bisa'}
             content={
               <>
                 <div className="mb-4">
@@ -92,7 +92,7 @@ export const Life = () => {
           />
           <SectionWithImage
             dir="ltr"
-            img={life3}
+            imgs={[life3]}
             title={"3. Program Penanganan Anak"}
             content={
               <>
