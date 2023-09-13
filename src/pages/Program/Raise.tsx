@@ -4,6 +4,8 @@ import raise1 from "../../assets/images/program/raise-1.png";
 import raise2 from "../../assets/images/program/raise-2.png";
 import raise3 from "../../assets/images/program/raise-3.png";
 import raise4 from "../../assets/images/program/raise-4.png";
+import raise5 from "../../assets/images/program/raise-5.png";
+import raise6 from "../../assets/images/program/raise-6.png";
 import { SectionWithImage } from "../../components/commons/Section/SectionWithImage";
 import { SectionText } from "../../components/commons/Section/SectionText";
 
@@ -40,10 +42,10 @@ export const Raise = () => {
             {`Program edukasi masyarakat seputar pendidikan dan penanganan anak berkebutuhan khusus
                          melalui website, media sosial, dan newsletters.`}
           </div>
-          <SectionWithImage 
+          <SectionWithImage
             dir="ttb"
-            imgs={[raise1,raise1,raise1]}
-            title="1. Program “Pustaka Kita”"
+            imgs={[raise1, raise5, raise6]}
+            title="1. Program Pustaka Kita"
             content={
               <>
                 <div className="mb-4">
@@ -51,13 +53,28 @@ export const Raise = () => {
                   pendidikan, maupun dukungan pengasuhan terhadap anak/individu
                   berkebutuhan khusus, YIPABK secara rutin telah menyebarkan
                   informasi dan inspirasi seputar kondisi anak berkebutuhan
-                  khusus lewat Program “Pustaka Kita”.
+                  khusus lewat Program Pustaka Kita.
                 </div>
                 <div className="mb-4">
                   Mulai dari IG live, konten edukasi, newsletter bulanan, hingga
                   webinar gratis yang diikuti dengan sesi diskusi bersama pakar,
                   Anda bisa menemukan lebih banyak tentang isu-isu pendidikan
                   ABK di website serta Instagram @yipabk!
+                </div>
+                <div className="mb-4">
+                  <b className="font-bold">Webinar untuk masyarakat umum:</b>{" "}
+                  “Building Resilience in Anxious Time: Restoring Our Inner
+                  Garden of Resilience” speaker by: Dr. Joyce C. Mills (Founder
+                  of StoryPlay®)
+                </div>
+                <div className="mb-4">
+                  <b className="font-bold">
+                    {`Konferensi Daring Pendidikan Inklusif Indonesia `}
+                  </b>
+                  Konferensi Daring Pendidikan Inklusif Indonesia 2022:
+                  “Peningkatan Kualitas Layanan Pendidikan bagi Semua Anak
+                  dengan Beragam Kondisi Pasca Pandemi – Gain Back After
+                  Learning Loss” – 13, 20, 27 Agustus 2022
                 </div>
               </>
             }
@@ -98,7 +115,7 @@ export const Raise = () => {
             }
           />
 
-          <div className="flex flex-col justify-center gap-4 max-w-[75%] py-24">
+          <div className="flex flex-col justify-center gap-4 max-w-[75%] pb-24">
             <div
               data-aos="fade-down"
               data-aos-once="true"

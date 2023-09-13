@@ -31,9 +31,11 @@ export const Care = () => {
       <div className="flex flex-col justify-center items-center w-100 min-h-[100vh] px-6 w-full bg-blue/40 gap-12">
         <div className="flex flex-col bg-white w-full justify-center items-center min-h-[100vh]">
           <SectionWithImage
-            dir="rtl"
-            title="1. Program “YIPPIE”"
+            dir="ltr"
+            title="1. Program YIPPIE"
             imgs={[care1]}
+            imRatio="w-3/5"
+            txRatio="w-2/5"
             content={
               <div className="flex flex-col gap-4">
                 <div>

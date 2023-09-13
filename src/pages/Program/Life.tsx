@@ -3,6 +3,7 @@ import hero from "../../assets/images/program/life-hero.png";
 import life1 from "../../assets/images/program/life-1.png";
 import life2 from "../../assets/images/program/life-2.png";
 import life3 from "../../assets/images/program/life-3.png";
+import life4 from "../../assets/images/program/life-4.png";
 import { SectionWithImage } from "../../components/commons/Section/SectionWithImage";
 
 export const Life = () => {
@@ -35,29 +36,28 @@ export const Life = () => {
             data-aos-once="true"
             className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center"
           >
-            {`Program bantuan bagi anak dan orang tua/wali anak yang mengalami gangguan perkembangan
-                         dan kesulitan dalam mengikuti pembelajaran di sekolah.`}
+            {` Program bantuan bagi orang tua/wali dan anak dengan gangguan perkembangan atau kesulitan 
+            belajar yang mengalami kesulitan ekonomi .`}
           </div>
           <SectionWithImage
             dir="ltr"
-            imgs={[life1,life1]}
-            title={'1. Program Aku Bisa Belajar'}
+            imgs={[life1, life2]}
+            title={"1. Program Aku Bisa Belajar"}
             content={
               <>
                 <div className="mb-4">
-                  Program “Aku Bisa Belajar” adalah program yang dirancang agar
-                  anak-anak berkebutuhan khusus atau dengan disabilitas dapat
-                  mengenyam layanan pendidikan di sekolah lewat pemberian surat
-                  asesmen.
+                  Program Aku Bisa Belajar adalah program yang dirancang agar
+                  anak-anak berkebutuhan khusus atau dengan disabilitas mendapat
+                  layanan pendidikan sesuai keterbatasan siswa didik lewat
+                  pemberian surat asesmen.
                 </div>
                 <div className="mb-4">
-                  Asesmen yang dilakukan meliputi pengukuran terhadap kondisi,
-                  hambatan, dan kemampuan anak. Hasil asesmen ini kemudian akan
-                  menjadi dasar bagi guru untuk membuat program pembelajaran
-                  yang sesuai dengan kebutuhan anak didik mereka.
+                  Asesmen meliputi asesmen  dasar dan tes intelegensi yang 
+                  dilakukan oleh tenaga Psikolog melalui wawancara, observasi,
+                  pengukuran informal dan tes baku verbal dan tes IQ.
                 </div>
                 <div className="mb-4">
-                  Saat ini, program “Aku Bisa Belajar” berfokus pada pemberian
+                  Saat ini, program Aku Bisa Belajar berfokus pada pemberian
                   layanan asesmen bagi anak didik berkebutuhan khusus dari
                   berbagai sekolah negeri di DKI Jakarta.
                 </div>
@@ -66,49 +66,35 @@ export const Life = () => {
           />
           <SectionWithImage
             dir="rtl"
-            imgs={[life2,life2]}
-            title={'2. Program Kita Bisa'}
+            imgs={[life4, life3]}
+            title={"2. Program Kita Bisa"}
             content={
               <>
                 <div className="mb-4">
-                  Program “Aku Bisa Belajar” adalah program yang dirancang agar
-                  anak-anak berkebutuhan khusus atau dengan disabilitas dapat
-                  mengenyam layanan pendidikan di sekolah lewat pemberian surat
-                  asesmen.
+                  Program ini merupakan layanan pendampingan bagi para orangtua
+                  yang memiliki anak berkebutuhan khusus. Kami meyakini orang
+                  tua memiliki peran yang sangat besar dan kuat dalam membantu
+                  anak mereka mengatasi berbagai hambatan atau kesulitan yang
+                  dialami anak karena kondisi kebutuhan khusus mereka.
                 </div>
                 <div className="mb-4">
-                  Asesmen yang dilakukan meliputi pengukuran terhadap kondisi,
-                  hambatan, dan kemampuan anak. Hasil asesmen ini kemudian akan
-                  menjadi dasar bagi guru untuk membuat program pembelajaran
-                  yang sesuai dengan kebutuhan anak didik mereka.
+                  Oleh sebab itu orangtua perlu belajar memahami kondisi anak
+                  mereka dan mengerti bagaimana memberikan intervensi di rumah,
+                  mengajarkan anak akan kemampuan (skills) yang dibutuhkan untuk
+                  anak mereka dapat bertumbuh, berkembang, belajar, dan
+                  melakukan aktivitas yang bermakna.  
                 </div>
                 <div className="mb-4">
-                  Saat ini, program “Aku Bisa Belajar” berfokus pada pemberian
-                  layanan asesmen bagi anak didik berkebutuhan khusus dari
-                  berbagai sekolah negeri di DKI Jakarta.
+                  Program ini dijalankan bersama para terapis, psikolog, dan
+                  relawan. Para praktisi ini bersama-sama memberikan saran,
+                  arahan, dan training kepada orangtua yang memiliki anak
+                  berkebutuhan khusus. 
                 </div>
-              </>
-            }
-          />
-          <SectionWithImage
-            dir="ltr"
-            imgs={[life3]}
-            title={"3. Program Penanganan Anak"}
-            content={
-              <>
                 <div className="mb-4">
                   Berfokus pada anak-anak dengan spektrum autisme, ADHD,
-                  gangguan belajar, gifted disinkroni, dan Down syndrome, YIPABK
-                  telah membantu 25 anak untuk mendapatkan asesmen hingga
-                  intervensi terapi dan program pembelajaran individu
-                  (Individual Educational Program) lewat Program Penanganan
-                  Anak.
-                </div>
-                <div className="mb-4">
-                  Kegiatan yang dilakukan sejak tahun 2013 hingga 2015 ini
-                  adalah hasil kerja sama YIPABK dengan Yayasan HOPE Worldwide
-                  Indonesia yang selama ini telah bekerja melayani pendidikan
-                  dan kesehatan anak di pemukiman-pemukiman miskin.
+                  gangguan belajar, gifted disinkroni, dan down syndrome, YIPABK
+                  telah membantu banyak anak untuk mendapatkan asesmen hingga
+                  intervensi terapi.  
                 </div>
               </>
             }
