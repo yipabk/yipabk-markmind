@@ -44,6 +44,22 @@ export const Publikasi = () => {
       linkTo: "/artikel/autism",
     },
     {
+      id: "2",
+      image: dyslexia,
+      title: "What is Dyslexia?",
+      content:
+        "Kata disleksia berasal dari kata “dys” yang berarti gangguan atau ketidakmampuan, dan kata...",
+      linkTo: "/artikel/dyslexia",
+    },
+    {
+      id: "3",
+      image: autism,
+      title: "What is Autism?",
+      content:
+        "Seseorang dengan dyspraxia/dispraksia mempunyai masalah dalam membuat ide, perencanaan, dan...",
+      linkTo: "/artikel/autism",
+    },
+    {
       id: "4",
       image: adhd,
       title: "What is ADHD?",
