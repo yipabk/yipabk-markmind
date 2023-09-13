@@ -35,7 +35,7 @@ export const Care = () => {
             title="1. Program YIPPIE"
             imgs={[care1]}
             imRatio="w-3/5"
-            txRatio="w-2/5"
+            txRatio="lg:w-2/5"
             content={
               <div className="flex flex-col gap-4">
                 <div>

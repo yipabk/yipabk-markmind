@@ -80,7 +80,7 @@ export const Teach = () => {
                   ADHD, Learning Disabilities, Emotional Behaviour Disorder, dan
                   Gifted Talented.
                 </div>
-                <div className="flex flex-col lg:grid grid-cols-[auto_404px] lg:grid-cols-[auto_404px] gap-20">
+                <div className="flex flex-col items-center lg:grid grid-cols-[auto_404px] lg:grid-cols-[auto_404px] gap-20">
                   <div>
                     <div className="flex flex-col gap-10">
                       <div>
