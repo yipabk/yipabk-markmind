@@ -6,6 +6,7 @@ import image4 from "../../../assets/images/berita-terkini/image-4.png";
 import image5 from "../../../assets/images/berita-terkini/image-5.png";
 import image6 from "../../../assets/images/berita-terkini/image-6.png";
 import image7 from "../../../assets/images/berita-terkini/image-7.png";
+import berita from "../../../assets/images/berita-terkini/berita.png";
 import mdrt from "../../../assets/images/berita-terkini/mdrt.png";
 import peace from "../../../assets/images/berita-terkini/peace.png";
 import { PublikasiHero } from "../PublikasiHero";
@@ -38,6 +39,14 @@ export const BeritaTerkini = () => {
           <div className="flex flex-col gap-40">
             <div className="flex flex-col lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-8">
               <div
+                data-aos="fade-left"
+                data-aos-once="true"
+                className="flex flex-col gap-8"
+              >
+                <img src={image1} alt="" />
+                <img src={image2} alt="" />
+              </div>
+              <div
                 data-aos="fade-right"
                 data-aos-once="true"
                 className="flex flex-col gap-12 font-montserrat text-sm lg:text-base"
@@ -63,13 +72,21 @@ export const BeritaTerkini = () => {
 									 sekolah negeri.`}
                 </div>
               </div>
+            </div>
+            <div className="flex flex-col-reverse lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-6">
               <div
                 data-aos="fade-left"
                 data-aos-once="true"
-                className="flex flex-col gap-8"
+                className="w-1/2 flex flex-col gap-12 font-montserrat text-sm lg:text-base"
               >
-                <img src={image1} alt="" />
-                <img src={image2} alt="" />
+                <div className="whitespace-pre-line">{`Melihat kebutuhan tersebut, YIPABK pun meluncurkan program Aku Bisa Belajar dan Guru Bisa Belajar dengan dukungan dana dari MDRT Foundation. Kedua program ini ditujukan untuk meningkatkan kualitas pendidikan yang diterima peserta didik berkebutuhan khusus (PDBK) di sekolah negeri.`}</div>
+              </div>
+              <div
+                data-aos="fade-right"
+                data-aos-once="true"
+                className="flex flex-col gap-6"
+              >
+                <img src={berita} alt="" />
               </div>
             </div>
             <div className="flex flex-col-reverse lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-6">
@@ -79,15 +96,6 @@ export const BeritaTerkini = () => {
                 className="flex flex-col gap-6"
               >
                 <img src={image3} alt="" />
-                <div>
-                  <img src={image4} alt="" />
-                  <div className="whitespace-pre-line text-center font-montserrat">
-                    {`Penerima manfaat 90 anak di wilayah DKI Jakarta
-											( 5 Sekolah Negeri wilayah DKI Jakarta)
-											Tempat: 4 sekolah negeri di DKI Jakarta
-											`}
-                  </div>
-                </div>
               </div>
               <div
                 data-aos="fade-left"
@@ -97,11 +105,31 @@ export const BeritaTerkini = () => {
                 <div className="font-bold text-[32px] leading-10">
                   Program “Aku Bisa Belajar”
                 </div>
-                <div className="whitespace-pre-line">
-                  {`Program “Aku Bisa Belajar” terdiri dari rangkaian kegiatan yang 
-									memberikan fasilitas pemeriksaan psikoedukasi kepada PDBK
-									 di sejumlah SD Negeri di wilayah DKI Jakarta.`}
+                <div className="whitespace-pre-line">{`Program Aku Bisa Belajar terdiri dari rangkaian kegiatan yang
+                  memberikan fasilitas pemeriksaan psikoedukasi kepada PDBK di
+                  sejumlah SD Negeri di wilayah DKI Jakarta.`}</div>
+              </div>
+            </div>
+
+            <div className="flex flex-col-reverse lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-6">
+              <div
+                data-aos="fade-right"
+                data-aos-once="true"
+                className="flex flex-col gap-6"
+              >
+                <div>
+                  <div className="font-bold whitespace-pre-line text-center font-montserrat">
+                    {`Berikut rekam jejak program “Aku 
+                    Bisa Belajar” selama bulan Mei 2023:`}
+                  </div>
+                  <img src={image4} alt="" />
                 </div>
+              </div>
+              <div
+                data-aos="fade-left"
+                data-aos-once="true"
+                className="flex flex-col gap-12 font-montserrat text-sm lg:text-base"
+              >
                 <div className="whitespace-pre-line">
                   {`Pemeriksaan dilakukan oleh tenaga psikolog melalui 
 									wawancara, observasi, pengukuran informal, tes baku verbal, 
@@ -111,8 +139,9 @@ export const BeritaTerkini = () => {
 									 pendidik untuk membuat pertimbangan dan keputusan 
 									 dalam kegiatan belajar-mengajar. 
 
-										Berikut rekam jejak program “Aku Bisa Belajar” selama bulan 
-										Mei 2023:`}
+                   Penerima manfaat 90 anak di wilayah DKI Jakarta
+                   ( 5 Sekolah Negeri wilayah DKI Jakarta)
+                   Tempat: 4 sekolah negeri di DKI Jakarta`}
                 </div>
               </div>
             </div>
@@ -120,13 +149,13 @@ export const BeritaTerkini = () => {
               <div
                 data-aos="fade-right"
                 data-aos-once="true"
-                className="flex flex-col gap-12 font-montserrat text-sm lg:text-base"
+                className="w-[70%] flex flex-col gap-12 font-montserrat text-sm lg:text-base"
               >
                 <div className="font-bold text-[32px] leading-10">
                   Program “Guru Bisa Belajar”
                 </div>
                 <div>
-                  <div className="whitespace-pre-line">
+                  <div className="whitespace-pre-line ">
                     {`Program “Guru Bisa Belajar” merupakan program lanjutan dari program “Aku Bisa Belajar”, di mana guru-guru SD Negeri di wilayah DKI Jakarta menerima pelatihan “Identifikasi dan Kemampuan Asesmen Dasar” yang dibimbing oleh Ibu Kurnia Mega Hapsari, S.Psi., M.Psi., Psikolog dari PEACE.
 
 										Adapun tujuan kegiatan ini:

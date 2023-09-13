@@ -5,9 +5,7 @@ import autism from "../../assets/images/publikasi/artikel-autism.png";
 import dyslexia from "../../assets/images/publikasi/artikel-dyslexia.png";
 import dyspraxia from "../../assets/images/publikasi/artikel-dyspraxia.png";
 import publikasi1 from "../../assets/images/publikasi/publikasi-1.png";
-import publikasi2 from "../../assets/images/publikasi/publikasi-2.png";
-import publikasi3 from "../../assets/images/publikasi/publikasi-3.png";
-import publikasi4 from "../../assets/images/publikasi/publikasi-4.png";
+import newsletter from "../../assets/images/publikasi/newsletter.png";
 import Button from "../../components/Button";
 import { Slider } from "../../components/commons/Slider";
 import useWindowDimensions from "../../helpers/useWindowDimension";
@@ -154,10 +152,10 @@ export const Publikasi = () => {
 								bersama MDRT Foundation`}
               </div>
               <div className="text-justify">
-                Hingga saat ini, sekolah inklusi masih menghadapi tantangan
-                dalam lingkungan sekolah. Melihat kebutuhan tersebut, YIPABK pun
-                meluncurkan program “Aku Bisa Belajar” dan “Guru Bisa Belajar”
-                dengan dukungan dana dari MDRT Foundation.
+                Hingga saat ini, YIPABK dan MDRT Foundation telah membantu 90
+                Peserta Didik Berkebutuhan Khusus mendapatkan surat asesmen dan
+                melatih 53 pendidik untuk siap melayani PDBK di sekolah
+                masing-masing
               </div>
               <Button
                 linkTo="/publikasi/berita-terkini"
@@ -202,32 +200,12 @@ export const Publikasi = () => {
             Newsletter
           </div>
           <div className="flex flex-col lg:grid md:grid-cols-[2fr_1fr] items-center gap-12 sm:px-16">
-            <div
-              data-aos="fade-right"
-              data-aos-once="true"
-              className="grid grid-cols-[3fr_2fr] grid-rows-2 gap-1"
-            >
-              <div className="row-span-2">
-                <img
-                  className="w-full h-full object-cover"
-                  src={publikasi2}
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="w-full h-full object-cover"
-                  src={publikasi3}
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="w-full h-full object-cover"
-                  src={publikasi4}
-                  alt=""
-                />
-              </div>
+            <div data-aos="fade-right" data-aos-once="true" className="">
+              <img
+                className="w-[80%] h-[80%] object-cover"
+                src={newsletter}
+                alt=""
+              />
             </div>
 
             <div

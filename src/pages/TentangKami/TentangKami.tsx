@@ -21,46 +21,55 @@ export const TentangKami = () => {
     {
       id: "team1",
       image: team1,
+      name: "Budiarti Silalahi, M.A",
       title: "Ketua Dewan Pembina",
     },
     {
       id: "team2",
       image: team2,
+      name: "Drs. Maimunah Natasha, BA",
       title: "Anggota Dewan Pembina",
     },
     {
       id: "team3",
       image: team3,
+      name: "Dr. Herti Eliza Silalahi, M.Kes, Ph.D",
       title: "Anggota Dewan Pembina",
     },
     {
       id: "team4",
       image: team4,
+      name: "Dr. Alice Arianto, Psy.D., CGP.",
       title: "Founder Bentara Campus",
     },
     {
       id: "team5",
       image: team5,
+      name: "Charles Ham",
       title: "Dewan Pengawas",
     },
     {
       id: "team6",
       image: team6,
+      name: "Suinah Djohan, SE",
       title: "Ketua Dewan Pengurus",
     },
     {
       id: "team7",
       image: team7,
+      name: "Very Jun Leven Manik, S.Sos",
       title: "Wakil Ketua Dewan Pengurus",
     },
     {
       id: "team8",
       image: team8,
+      name: "Yudi Hartanto",
       title: "Sekretaris Dewan Pengurus",
     },
     {
       id: "team9",
       image: team9,
+      name: "Merry Sadan, SE",
       title: "Bendahara Dewan Pengurus",
     },
   ];
