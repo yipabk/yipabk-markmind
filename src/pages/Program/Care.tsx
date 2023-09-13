@@ -33,7 +33,7 @@ export const Care = () => {
           <SectionWithImage
             dir="rtl"
             title="1. Program “YIPPIE”"
-            img={care1}
+            imgs={[care1]}
             content={
               <div className="flex flex-col gap-4">
                 <div>

@@ -1,23 +1,32 @@
 import { ReactNode } from 'react'
 
 interface Props {
-	img: string
+	imgs: string[]
 	title?: string
 	content: ReactNode
-	dir: 'ltr' | 'rtl'
+	dir: 'ltr' | 'rtl' | 'ttb'
 }
 
-export const SectionWithImage = ({ img, title, content, dir }: Props) => {
+export const SectionWithImage = ({ imgs, title, content, dir }: Props) => {
 	return (
 		<div
 			className={`flex ${
-				dir === 'ltr' ? 'lg:flex-row' : 'lg:flex-row-reverse'
-			} flex-col px-8 xl:px-24 2xl:px-40 py-24 md:py-48 items-center justify-center gap-12 lg:gap-16'`}>
+				dir === 'ltr' ? 'flex-col lg:flex-row' : 
+				dir === 'rtl' ? 'flex-col lg:flex-row-reverse' :
+				dir === 'ttb' ? 'flex-col-reverse' : 'flex-col'
+			} px-8 xl:px-24 2xl:px-40 py-24 md:py-48 items-center justify-center gap-12 lg:gap-16'`}>
 			<div
 				data-aos={`fade-${dir === 'ltr' ? 'right' : 'left'}`}
 				data-aos-once='true'
-				className='flex w-full justify-center '>
-				<img src={img} className=' bg-black' />
+				className={`flex flex-row ${
+					dir === 'ltr' ? 'md:flex-col' : 
+					dir === 'rtl' ? 'md:flex-col': ''
+					} w-full justify-center`}>
+				{imgs.map((img)=>(
+					<div className='mx-1 sm:my-2 w-full'>
+						<img src={img} className='object-fill w-full bg-black' />
+					</div>
+				))}
 			</div>
 			<div
 				data-aos={`fade-${dir === 'ltr' ? 'left' : 'right'}`}

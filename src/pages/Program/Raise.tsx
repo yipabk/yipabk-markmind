@@ -40,9 +40,9 @@ export const Raise = () => {
             {`Program edukasi masyarakat seputar pendidikan dan penanganan anak berkebutuhan khusus
                          melalui website, media sosial, dan newsletters.`}
           </div>
-          <SectionWithImage
-            dir="ltr"
-            img={raise1}
+          <SectionWithImage 
+            dir="ttb"
+            imgs={[raise1,raise1,raise1]}
             title="1. Program “Pustaka Kita”"
             content={
               <>
