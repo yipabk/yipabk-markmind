@@ -33,7 +33,7 @@ export const SectionWithImage = ({
         data-aos={`fade-${dir === "ltr" ? "right" : "left"}`}
         data-aos-once="true"
         className={`flex flex-row ${
-          dir === "ttb" ? "w-full" : `md:flex-col ${imRatio}`
+          dir === "ttb" ? "w-full" : `sm:flex-col sm:${imRatio}`
         } justify-center gap-6`}
       >
         {imgs.map((img) => (
