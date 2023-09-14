@@ -38,7 +38,7 @@ export const AboutUs = () => {
             keindahan diri mereka di Indonesia tercinta ini.
           </p>
           <p className="leading-[21px]">
-            Dr. Alice Arianto, Psy.D., CGP. - Pendiri Bentara Campus
+            Dr. Alice Arianto, Psy.D., CGP. - Pendiri YIPABK
           </p>
         </div>
       </div>
