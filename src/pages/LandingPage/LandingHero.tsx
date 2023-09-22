@@ -40,6 +40,7 @@ export const LandingHero = () => {
           autoPlay
           muted
           loop
+          playsinline
           className="absolute left-0 top-0 object-cover w-full h-full z-[-2]"
           src={video}
         />
