@@ -82,8 +82,7 @@ export const Footer = () => {
       <div>
         <div className="flex items-center justify-center bg-grey border-t border-gray-200 py-3">
           <p className="md:text-base text-xs font-montserrat font-[500] text-white/90 xl:text-center">
-            &copy; COPY RIGHT 2023, Yayasan Indonesia Peduli Anak Berkebutuhan
-            Khusus
+            &copy; COPY RIGHT 2023, Yayasan Indonesia Peduli <span className="whitespace-nowrap">Anak Berkebutuhan Khusus</span>
           </p>
         </div>
       </div>

@@ -142,7 +142,7 @@ export const Publikasi = () => {
 								Program Guru Bisa Belajar 
 								bersama MDRT Foundation`}
 							</div>
-							<div className='text-justify'>
+							<div className='text-left'>
 								Hingga saat ini, YIPABK dan MDRT Foundation telah membantu 90 Peserta Didik Berkebutuhan Khusus
 								mendapatkan surat asesmen dan melatih 53 pendidik untuk siap melayani PDBK di sekolah masing-masing
 							</div>
@@ -175,7 +175,7 @@ export const Publikasi = () => {
 						</div>
 
 						<div data-aos='fade-left' data-aos-once='true' className='flex flex-col gap-10'>
-							<div className='text-justify'>
+							<div className='text-left'>
 								Dapatkan informasi terkini seputar kegiatan YIPABK, edukasi terkait anak berkebutuhan khusus, serta
 								cerita dari mereka yang PEDULI setiap bulannya langsung di Inbox Anda!
 							</div>

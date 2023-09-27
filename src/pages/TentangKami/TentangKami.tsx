@@ -40,7 +40,7 @@ export const TentangKami = () => {
       id: "team4",
       image: team4,
       name: "Dr. Alice Arianto, Psy.D., CGP.",
-      title: "Founder Bentara Campus",
+      title: "Founder YIPABK",
     },
     {
       id: "team5",
@@ -204,10 +204,9 @@ export const TentangKami = () => {
           <div
             data-aos="fade-right"
             data-aos-once="true"
-            className="mr-auto text-4xl ml-4 xl:ml-16 whitespace-pre-line text-center xl:text-start font-display underline underline-offset-8 decoration-orange tracking-wide"
+            className="xl:mr-auto text-4xl ml-4 xl:ml-16 whitespace-pre-line text-center xl:text-start font-display underline underline-offset-8 decoration-orange tracking-wide"
           >
-            {`Meet Our
-						 Team`}
+            {`Meet Our Team`}
           </div>
           <Slider<TeamCardProps>
             key={maxItem}

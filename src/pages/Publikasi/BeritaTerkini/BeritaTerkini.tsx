@@ -131,13 +131,7 @@ export const BeritaTerkini = () => {
                 className="flex flex-col gap-12 font-montserrat text-sm lg:text-base"
               >
                 <div className="whitespace-pre-line">
-                  {`Pemeriksaan dilakukan oleh tenaga psikolog melalui 
-									wawancara, observasi, pengukuran informal, tes baku verbal, 
-									serta tes IQ, dengan hasil pemeriksaan berupa surat asesmen 
-									yang berisi informasi tentang kondisi kesulitan belajar dari
-									 siswa yang bersangkutan. Informasi ini kemudian digunakan 
-									 pendidik untuk membuat pertimbangan dan keputusan 
-									 dalam kegiatan belajar-mengajar. 
+                  {`Pemeriksaan dilakukan oleh tenaga psikolog melalui wawancara, observasi, pengukuran informal, tes baku verbal, serta tes IQ, dengan hasil pemeriksaan berupa surat asesmen yang berisi informasi tentang kondisi kesulitan belajar dari siswa yang bersangkutan. Informasi ini kemudian digunakan  pendidik untuk membuat pertimbangan dan keputusan dalam kegiatan belajar-mengajar. 
 
                    Penerima manfaat 90 anak di wilayah DKI Jakarta
                    ( 5 Sekolah Negeri wilayah DKI Jakarta)

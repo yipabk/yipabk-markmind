@@ -17,7 +17,7 @@ export const ArtikelSliderCard = ({ image, title, content, linkTo }: ArtikelSlid
 				</div>
 				<div className='font-montserrat p-6 flex flex-col gap-4'>
 					<div className='font-bold text-[24px]'>{title}</div>
-					<div className='text-justify text-[12px]'>{content}</div>
+					<div className='text-left text-[12px]'>{content}</div>
 				</div>
 				<a
 					href={linkTo}
