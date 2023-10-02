@@ -183,7 +183,7 @@ export const Publikasi = () => {
 								Tertarik membaca koleksi <i>Newsletter</i> kami?
 							</div>
 							<Button
-								linkTo='https://drive.google.com/drive/folders/1_3yHKaim5Zaf2crLhh9L5T5EpCmzrWRb'
+								linkTo='https://drive.google.com/drive/folders/1C-Xy0O5h10sMaFVNNA83I3jmoG5topWA?usp=drive_link'
 								className='w-full sm:max-w-[256px] h-[56px] text-center flex items-center'>
 								<div>
 									<i>Download</i> di sini!
