@@ -37,7 +37,7 @@ export const Life = () => {
             className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center"
           >
             {` Program bantuan bagi orang tua/wali dan anak dengan gangguan perkembangan atau kesulitan 
-            belajar yang mengalami kesulitan ekonomi .`}
+            belajar yang mengalami kesulitan ekonomi`}
           </div>
           <SectionWithImage
             dir="ltr"

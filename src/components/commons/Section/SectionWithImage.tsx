@@ -24,7 +24,7 @@ export const SectionWithImage = ({ imgs, title, content, dir, imRatio = 'w-1/3',
 			<div
 				data-aos={`fade-${dir === 'ltr' ? 'right' : 'left'}`}
 				data-aos-once='true'
-				className={`flex flex-row ${dir === 'ttb' ? 'w-full' : `sm:flex-col sm:${imRatio}`} justify-center gap-6`}>
+				className={`flex flex-row flex-wrap ${dir === 'ttb' ? 'w-full' : `sm:flex-col sm:${imRatio}`} justify-center gap-6`}>
 				{imgs.map((img) => (
 					<div key={img} className={`mx-1 sm:my-2`}>
 						<img src={img} className={`${dir === 'ttb' ? 'h-full' : 'w-full'} object-fill bg-black`} />
@@ -40,7 +40,7 @@ export const SectionWithImage = ({ imgs, title, content, dir, imRatio = 'w-1/3',
 				{title && (
 					<div className='text-xl lg:text-[32px] tracking-wide mb-6 font-bold text-center lg:text-start'>{title}</div>
 				)}
-				<div className='text-sm lg:text-base font-light leading-5 text-justify'>{content}</div>
+				<div className='text-sm lg:text-base font-light leading-5 text-left'>{content}</div>
 			</div>
 		</div>
 	)

@@ -17,7 +17,7 @@ export const Actions = () => {
       icon: <ShakeHandIcon />,
       title: "JADI RELAWAN",
       subtitle: `untuk buat dampak nyata
-       bersama muda mudi Indonesia`,
+       bersama muda-mudi Indonesia`,
       buttonText: "Daftar Sekarang",
       buttonLink: "mailto:yipabk@gmail.com",
     },

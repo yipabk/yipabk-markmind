@@ -19,7 +19,7 @@ export const LandingHero = () => {
         >
           Lahir dari kepedulian sekelompok pendidik akan masa depan anak
           berkebutuhan khusus, kami berkomitmen untuk mewujudkan generasi muda
-          Indonesia yang berprestasi lewat pendidikan yang merata.
+          Indonesia yang berprestasi lewat pendidikan yang merata
         </div>
 
         <div
@@ -40,6 +40,7 @@ export const LandingHero = () => {
           autoPlay
           muted
           loop
+          playsInline
           className="absolute left-0 top-0 object-cover w-full h-full z-[-2]"
           src={video}
         />

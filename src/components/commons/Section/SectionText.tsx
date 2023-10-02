@@ -21,7 +21,7 @@ export const SectionText = ({ title, content }: Props) => {
         <div
           data-aos="fade-down"
           data-aos-once="true"
-          className="text-sm lg:text-base font-light leading-5 text-justify"
+          className="text-sm lg:text-base font-light leading-5 text-left"
         >
           {content}
         </div>
