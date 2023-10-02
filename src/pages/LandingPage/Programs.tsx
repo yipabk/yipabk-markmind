@@ -39,7 +39,7 @@ export const Programs = () => {
         </ProgramDisplayBox>
         <ProgramDisplayBox
           linkTo="/program/teach"
-          hoverText="Training, Educators, Ability, Care, &Hard-skill"
+          hoverText="Training, Educators, Ability, Care, Hard-skill"
           className="w-[10rem] h-[14rem] sm:w-[12rem] sm:h-[16rem] xl:w-[16rem] xl:h-[20rem] m-2"
           bgImage={teach}
         >
