@@ -19,7 +19,7 @@ export const LandingHero = () => {
         >
           Lahir dari kepedulian sekelompok pendidik akan masa depan anak
           berkebutuhan khusus, kami berkomitmen untuk mewujudkan generasi muda
-          Indonesia yang berprestasi lewat pendidikan yang merata.
+          Indonesia yang berprestasi lewat pendidikan yang merata
         </div>
 
         <div

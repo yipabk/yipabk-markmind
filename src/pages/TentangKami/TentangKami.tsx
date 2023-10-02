@@ -19,28 +19,28 @@ import misi from "../../assets/images/misi.png";
 export const TentangKami = () => {
   const peoples: TeamCardProps[] = [
     {
+      id: "team4",
+      image: team4,
+      name: "Dr. Alice Arianto, Psy.D., CGP.",
+      title: "Founder YIPABK",
+    },
+    {
       id: "team1",
       image: team1,
-      name: "Budiarti Silalahi, M.A",
+      name: "Budiarti Silalahi, M.A.",
       title: "Ketua Dewan Pembina",
     },
     {
       id: "team2",
       image: team2,
-      name: "Drs. Maimunah Natasha, BA",
+      name: "Drs. Maimunah Natasha, B.A.",
       title: "Anggota Dewan Pembina",
     },
     {
       id: "team3",
       image: team3,
-      name: "Dr. Herti Eliza Silalahi, M.Kes, Ph.D",
+      name: "Dr. Herti Eliza Silalahi, M.Kes., Ph.D.",
       title: "Anggota Dewan Pembina",
-    },
-    {
-      id: "team4",
-      image: team4,
-      name: "Dr. Alice Arianto, Psy.D., CGP.",
-      title: "Founder YIPABK",
     },
     {
       id: "team5",
@@ -51,13 +51,13 @@ export const TentangKami = () => {
     {
       id: "team6",
       image: team6,
-      name: "Suinah Djohan, SE",
+      name: "Suinah Djohan, S.E.",
       title: "Ketua Dewan Pengurus",
     },
     {
       id: "team7",
       image: team7,
-      name: "Very Jun Leven Manik, S.Sos",
+      name: "Very Jun Leven Manik, S.Sos.",
       title: "Wakil Ketua Dewan Pengurus",
     },
     {
@@ -69,7 +69,7 @@ export const TentangKami = () => {
     {
       id: "team9",
       image: team9,
-      name: "Merry Sadan, SE",
+      name: "Merry Sadan, S.E.",
       title: "Bendahara Dewan Pengurus",
     },
   ];
@@ -188,7 +188,7 @@ export const TentangKami = () => {
                   </li>
                   <li>
                     Educate - Mengedukasi seluruh elemen masyarakat melalui
-                    berbagai kegiatan agar memiliki kepedulian, kesadaran dan
+                    berbagai kegiatan agar memiliki kepedulian, kesadaran, dan
                     pemahaman yang baik terhadap penanganan dan pendidikan
                     anak-anak berkebutuhan khusus
                   </li>

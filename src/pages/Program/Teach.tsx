@@ -37,7 +37,7 @@ export const Teach = () => {
             className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center"
           >
             {`Program pembinaan guru di bidang pedagogi, program belajar, intervensi, dan pemahaman terhadap
-                         kondisi peserta didik berkebutuhan khusus.`}
+                         kondisi peserta didik berkebutuhan khusus`}
           </div>
           <SectionWithImage
             title="1. Program Guru Bisa Belajar"
@@ -46,12 +46,12 @@ export const Teach = () => {
             content={
               <>
                 <div className="my-4">
-                  Menjembatani kebutuhan peserta didik berkebutuhan khusus
-                  dengan layanan pendidikan di sekolah-sekolah yang seringkali
-                  masih kurang memadai dari sisi kualitas maupun kuantitas,
-                  Program “Guru Bisa Belajar” menyediakan pelatihan dengan modul
-                  yang diampu oleh para praktisi pendidikan anak berkebutuhan
-                  khusus berpengalaman.
+                  Program ini memperlengkapi pendidik dengan kemampuan yang
+                  memadai dalam hal identifikasi dini siswa berkebutuhan khusus.
+                  Hal ini juga membekali para pendidik di sekolah dasar negeri
+                  dalam pelatihan untuk membuat program pembelajaran individu di
+                  kelas. Pendidik kemudian mampu mengidentifikasi kondisi dan
+                  karakteristik khusus anak berkebutuhan khusus.
                 </div>
                 <div className="my-4">
                   Bagi pihak sekolah, program ini juga memberikan pelatihan
@@ -65,7 +65,7 @@ export const Teach = () => {
             }
           />
           <SectionText
-            title="2. Program Pelatihan bagi para Pendidik”"
+            title="2. Program Pelatihan bagi Para Pendidik"
             content={
               <div className="flex flex-col gap-10">
                 <div>
@@ -93,11 +93,10 @@ export const Teach = () => {
                         secara langsung.
                       </div>
                       <div>
-                        Di tahun 2023 Program ini dinamakan{" "}
-                        <b className="font-bold">Program Guru Bisa Belajar</b>{" "}
-                        sebagai rangkaian sekaligus tindak lanjut dari Program
-                        Aku Bisa Belajar bagi Peserta Didik Berkebutuhan Khusus
-                        di SD Negeri.
+                        Di tahun 2023, program ini dinamakan program Guru Bisa
+                        Belajar sebagai rangkaian sekaligus tindak lanjut dari
+                        program Aku Bisa Belajar bagi Peserta Didik Berkebutuhan
+                        Khusus di SD Negeri.
                       </div>
                     </div>
                   </div>

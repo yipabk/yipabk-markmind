@@ -13,16 +13,18 @@ export const Footer = () => {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="mb-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 xl:mb-0 text-xs md:text-base">
-          <div className="flex gap-4">
+        <div className="mb-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 xl:mb-0 text-xs md:text-base">
+          <div className="flex col-span-2 gap-4">
             <div>
               <LocationIcon />
             </div>
             <div>
-              <div>Gedung E-Building, Lantai 2</div>
-              <div>Komplek Ruko harmoni Plaza Blok I, No 1-4,</div>
+              <div>Gedung E-Building,</div>
+              <div>Lantai 2 Komplek Ruko</div>
+              <div>Harmoni Plaza Blok I, No 1-4,</div>
               <div>Jl. Suryopranoto No.2 RT.14/RW.8</div>
-              <div>Gambir, Jakarta Pusat, DKI Jakarta 10130</div>
+              <div>Gambir, Jakarta Pusat,</div>
+              <div>DKI Jakarta 10130</div>
             </div>
           </div>
           <div className="flex flex-col gap-1">
@@ -82,7 +84,8 @@ export const Footer = () => {
       <div>
         <div className="flex items-center justify-center bg-grey border-t border-gray-200 py-3">
           <p className="md:text-base text-xs font-montserrat font-[500] text-white/90 xl:text-center">
-            &copy; COPY RIGHT 2023, Yayasan Indonesia Peduli <span className="whitespace-nowrap">Anak Berkebutuhan Khusus</span>
+            &copy; COPY RIGHT 2023, Yayasan Indonesia Peduli{" "}
+            <span className="whitespace-nowrap">Anak Berkebutuhan Khusus</span>
           </p>
         </div>
       </div>

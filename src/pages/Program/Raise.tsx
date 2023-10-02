@@ -40,7 +40,7 @@ export const Raise = () => {
             className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center"
           >
             {`Program edukasi masyarakat seputar pendidikan dan penanganan anak berkebutuhan khusus
-                         melalui website, media sosial, dan newsletters.`}
+                         melalui website, media sosial, dan newsletters`}
           </div>
           <SectionWithImage
             dir="ttb"
