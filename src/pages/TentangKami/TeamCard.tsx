@@ -17,7 +17,7 @@ export const TeamCard: FC<TeamCardProps> = ({ image, title, name }) => {
             "linear-gradient(180deg, rgba(201, 201, 201, 0.00) 0%, #7E7E7E 100%)",
         }}
       ></div>
-      <div className="relative z-20 flex items-end w-[222px] h-[222px]">
+      <div className="relative z-20 flex items-end w-[100%] h-[222px]">
         <img src={image} width={222} height={222} alt="" />
       </div>
       <div
