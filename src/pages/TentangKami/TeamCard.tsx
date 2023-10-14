@@ -27,7 +27,7 @@ export const TeamCard: FC<TeamCardProps> = ({ image, title, name }) => {
             "linear-gradient(0deg, #6CB4BE 35.04%, rgba(108, 180, 190, 0.00) 138.42%)",
         }}
       >
-        <div className="font-semibold">{name}</div>
+        <div className="font-semibold text-xs md:text-base">{name}</div>
         <div className="font-light text-xs">{title}</div>
       </div>
     </div>
