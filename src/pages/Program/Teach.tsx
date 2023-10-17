@@ -34,7 +34,7 @@ export const Teach = () => {
           <div
             data-aos="fade-up"
             data-aos-once="true"
-            className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center"
+            className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center font-montserrat"
           >
             {`Program pembinaan guru di bidang pedagogi, program belajar, intervensi, dan pemahaman terhadap
                          kondisi peserta didik berkebutuhan khusus`}

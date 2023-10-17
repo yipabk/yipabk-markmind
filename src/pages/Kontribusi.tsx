@@ -21,7 +21,7 @@ export const Kontribusi = () => {
 				<div
 					data-aos='fade-down'
 					data-aos-once='true'
-					className='text-orange text-xl font-medium w-1/2 text-center mb-[15vh] tracking-wide'>
+					className='text-orange text-xl font-medium w-1/2 text-center mb-[15vh] tracking-wide font-montserrat'>
 					Mari salurkan donasi Anda melalui rekening YIPABK untuk bersama wujudkan mimpi anak berkebutuhan khusus!
 				</div>
 			</FadingHeader>

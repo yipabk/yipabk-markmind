@@ -26,7 +26,7 @@ export const Life = () => {
           data-aos-once="true"
           className="text-grey text-center font-display text-xl lg-tex-[34px] mb-16 p-x4"
         >
-          (Learning Intevention Family Equipt)
+          (Learning Intervention Family Equipt)
         </div>
       </FadingHeader>
       <div className="flex flex-col justify-center items-center w-100 min-h-[100vh] px-6 w-full bg-blue/40 gap-12">
