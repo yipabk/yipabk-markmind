@@ -67,7 +67,7 @@ export const BeritaTerkini = () => {
 							<div
 								data-aos='fade-left'
 								data-aos-once='true'
-								className='w-1/2 flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
+								className='w-full md:w-1/2 flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
 								<div className='whitespace-pre-line'>{`Melihat kebutuhan tersebut, YIPABK pun meluncurkan program Aku Bisa Belajar dan Guru Bisa Belajar dengan dukungan dana dari MDRT Foundation. Kedua program ini ditujukan untuk meningkatkan kualitas pendidikan yang diterima peserta didik berkebutuhan khusus (PDBK) di sekolah negeri.`}</div>
 							</div>
 							<div data-aos='fade-right' data-aos-once='true' className='flex flex-col gap-6'>

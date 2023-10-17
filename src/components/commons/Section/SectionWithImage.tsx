@@ -34,8 +34,8 @@ export const SectionWithImage = ({ imgs, title, content, dir, imRatio = 'w-1/3',
 			<div
 				data-aos={`fade-${dir === 'ltr' ? 'left' : 'right'}`}
 				data-aos-once='true'
-				className={`${
-					dir === 'ttb' ? '' : `${txRatio}`
+				className={`w-full ${
+					dir === 'ttb' ? '' : `sm:${txRatio}`
 				} flex flex-col items-center lg:items-start text-black font-montserrat`}>
 				{title && (
 					<div className='text-xl lg:text-[32px] tracking-wide mb-6 font-bold text-center lg:text-start'>{title}</div>

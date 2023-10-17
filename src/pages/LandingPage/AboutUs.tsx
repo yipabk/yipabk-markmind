@@ -11,7 +11,7 @@ export const AboutUs = () => {
         <div className="text-3xl lg:text-5xl tracking-wide mb-6 font-display ">
           Sambutan dari Pendiri
         </div>
-        <div className="text-sm lg:text-[14px] font-[400] w-[16rem] sm:w-[24rem] lg:w-[34rem] leading-5 text-justify">
+        <div className="text-sm lg:text-[14px] font-[400] w-[16rem] sm:w-[24rem] lg:w-[34rem] leading-5 text-left">
           <div className="mb-4 leading-[21px]">
             Dengan rahmat, kasih, dan penyertaan Tuhan, YIPABK (Yayasan
             Indonesia Peduli Anak Berkebutuhan Khusus) dibentuk pada tahun 2012

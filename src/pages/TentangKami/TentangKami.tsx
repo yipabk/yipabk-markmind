@@ -105,17 +105,17 @@ export const TentangKami = () => {
 					data-aos-delay='200'
 					className='px-6 sm:px-12 md:px-24 lg:px-56 w-full py-12 flex justify-center items-center flex-col font-montserrat font-[400]'>
 					<div className='mb-24'>
-						<div className='mb-6 leading-6 text-justify'>
+						<div className='mb-6 leading-6 text-left'>
 							Yayasan Indonesia Peduli Anak Berkebutuhan Khusus (YIPABK) berdiri tahun 2012 dengan akta notaris Linda
 							Herawati Nomor 77 tanggal 28 Juni 2012.
 						</div>
-						<div className='mb-6 leading-6 text-justify'>
+						<div className='mb-6 leading-6 text-left'>
 							YIPABK lahir dari kepedulian sekelompok pendidik (guru, orangtua, dan pemerhati anak) terhadap masa depan
 							anak-anak yang memiliki kondisi kekhususan. Sebab begitu besar jumlah anak-anak di Indonesia, baik yang
 							mengalami ketunaan fisik, mental, intelegensi/kognisi, maupun sosial atau gangguan perilaku, yang masih
 							belum mendapat perhatian terhadap kebutuhan penanganan dan pendidikan mereka.
 						</div>
-						<div className='mb-6 leading-6 text-justify'>
+						<div className='mb-6 leading-6 text-left'>
 							Cikal bakal YIPABK dimulai dari gerakan bersama para pendidik dalam memperhatikan pentingnya penanganan
 							yang tepat dan tersedianya layanan pendidikan yang baik sejak dini untuk membantu anak-anak berkondisi
 							kekhususan tersebut memperoleh kesempatan bertumbuh dan berkembang, dan memiliki hidup yang lebih baik.
@@ -155,7 +155,7 @@ export const TentangKami = () => {
 								<div className='font-bold mb-4 '>
 									Advocating, Creating, Educating Special Needs Children in Indonesia
 								</div>
-								<ol className='ml-4 list-decimal text-justify'>
+								<ol className='ml-4 list-decimal text-left'>
 									<li>
 										Advocate - Anak-anak yang memiliki keterbatasan dalam perkembangan maupun akses layanan pendidikan
 									</li>
