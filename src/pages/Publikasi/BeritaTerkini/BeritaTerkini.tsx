@@ -10,6 +10,7 @@ import mdrt from '../../../assets/images/berita-terkini/mdrt.png'
 import peace from '../../../assets/images/berita-terkini/peace.png'
 import { PublikasiHero } from '../PublikasiHero'
 import { TableSVG } from './TableSVG'
+import { SectionWithImage } from '../../../components/commons/Section/SectionWithImage'
 
 export const BeritaTerkini = () => {
 	return (
@@ -33,7 +34,7 @@ export const BeritaTerkini = () => {
 					</div>
 					<div className='flex flex-col gap-40'>
 						<div className='flex flex-col lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-8'>
-							<div data-aos='fade-left' data-aos-once='true' className='flex flex-col gap-8'>
+							<div data-aos='fade-left' data-aos-once='true' className='flex flex-col gap-8 sm:w-2/5'>
 								<img src={image1} alt='' />
 								<img src={image2} alt='' />
 							</div>
@@ -70,20 +71,20 @@ export const BeritaTerkini = () => {
 								className='w-full lg:w-1/2 flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
 								<div className='whitespace-pre-line'>{`Melihat kebutuhan tersebut, YIPABK pun meluncurkan program Aku Bisa Belajar dan Guru Bisa Belajar dengan dukungan dana dari MDRT Foundation. Kedua program ini ditujukan untuk meningkatkan kualitas pendidikan yang diterima peserta didik berkebutuhan khusus (PDBK) di sekolah negeri.`}</div>
 							</div>
-							<div data-aos='fade-right' data-aos-once='true' className='flex flex-col gap-6'>
+							<div data-aos='fade-right' data-aos-once='true' className='sm:w-2/5 flex flex-col gap-6'>
 								<img src={berita} alt='' />
 							</div>
 						</div>
 						<div className='flex flex-col-reverse lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-6'>
-							<div data-aos='fade-right' data-aos-once='true' className='flex flex-col gap-6'>
+							<div data-aos='fade-right' data-aos-once='true' className='flex flex-col sm:w-1/2 gap-6'>
 								<img src={image3} alt='' />
 							</div>
 							<div
 								data-aos='fade-left'
 								data-aos-once='true'
-								className='flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
+								className='w-full md:w-auto flex flex-col items-center lg:items-stretch gap-12 font-montserrat text-sm lg:text-base'>
 								<div className='font-bold text-[32px] leading-10'>Program “Aku Bisa Belajar”</div>
-								<div className='whitespace-pre-line'>{`Program Aku Bisa Belajar terdiri dari rangkaian kegiatan yang
+								<div className='lg:whitespace-pre-line'>{`Program Aku Bisa Belajar terdiri dari rangkaian kegiatan yang
                   memberikan fasilitas pemeriksaan psikoedukasi kepada PDBK di
                   sejumlah SD Negeri di wilayah DKI Jakarta.`}</div>
 							</div>
@@ -118,7 +119,7 @@ export const BeritaTerkini = () => {
 							<div
 								data-aos='fade-right'
 								data-aos-once='true'
-								className='w-[70%] flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
+								className='w-full lg:max-w-[70%] flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
 								<div className='font-bold text-[32px] leading-10'>Program “Guru Bisa Belajar”</div>
 								<div>
 									<div className='whitespace-pre-line '>
