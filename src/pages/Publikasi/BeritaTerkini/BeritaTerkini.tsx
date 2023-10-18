@@ -40,21 +40,21 @@ export const BeritaTerkini = () => {
 							<div
 								data-aos='fade-right'
 								data-aos-once='true'
-								className='flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
-								<div className='whitespace-pre-line'>
+								className='flex flex-col gap-12 font-montserrat text-sm lg:text-base w-full lg:w-1/2'>
+								<div>
 									{`Menurut data statistik dari Kemendikbudristek, dari 66,6 juta penduduk
 								di tahun 2021, kisaran disabilitas anak usia 5-19 tahun mencapai angka
 								 3,3% atau sekitar 2.197.833 jiwa. Sayangnya, dari jumlah tersebut, hanya
 								  12,26% yang menempuh pendidikan formal.`}
 								</div>
-								<div className='whitespace-pre-line'>
+								<div>
 									{`Hingga saat ini, sekolah inklusi masih menghadapi tantangan dalam
 								 lingkungan sekolah, seperti adanya penolakan dari sebagian orang tua &
 								  masyarakat, pelecehan terhadap penyandang disabilitas, terbatasnya
 									 ketersediaan guru pembimbing khusus (GPK) yang kompeten, serta
 									  belum maksimalnya media pembelajaran yang aksesibel.`}
 								</div>
-								<div className='whitespace-pre-line'>
+								<div>
 									{`Melihat kebutuhan tersebut, YIPABK pun meluncurkan program “Aku Bisa
 								 Belajar” dan “Guru Bisa Belajar” dengan dukungan dana dari MDRT
 								  Foundation. Kedua program ini ditujukan untuk meningkatkan kualitas 
@@ -67,7 +67,7 @@ export const BeritaTerkini = () => {
 							<div
 								data-aos='fade-left'
 								data-aos-once='true'
-								className='w-full md:w-1/2 flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
+								className='w-full lg:w-1/2 flex flex-col gap-12 font-montserrat text-sm lg:text-base'>
 								<div className='whitespace-pre-line'>{`Melihat kebutuhan tersebut, YIPABK pun meluncurkan program Aku Bisa Belajar dan Guru Bisa Belajar dengan dukungan dana dari MDRT Foundation. Kedua program ini ditujukan untuk meningkatkan kualitas pendidikan yang diterima peserta didik berkebutuhan khusus (PDBK) di sekolah negeri.`}</div>
 							</div>
 							<div data-aos='fade-right' data-aos-once='true' className='flex flex-col gap-6'>
