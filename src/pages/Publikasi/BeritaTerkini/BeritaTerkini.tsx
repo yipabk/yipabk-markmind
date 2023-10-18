@@ -35,13 +35,13 @@ export const BeritaTerkini = () => {
 					<div className='flex flex-col gap-40'>
 						<div className='flex flex-col lg:flex-row px-8 md:px-20 lg:px-40 justify-between items-center gap-8'>
 							<div data-aos='fade-left' data-aos-once='true' className='flex flex-col gap-8 sm:w-2/5'>
-								<img src={image1} alt='' />
 								<img src={image2} alt='' />
+								<img src={image1} alt='' />
 							</div>
 							<div
 								data-aos='fade-right'
 								data-aos-once='true'
-								className='flex flex-col gap-12 font-montserrat text-sm lg:text-base w-full lg:w-1/2'>
+								className='flex flex-col gap-12 font-montserrat text-sm lg:text-base w-full lg:w-2/3'>
 								<div>
 									{`Menurut data statistik dari Kemendikbudristek, dari 66,6 juta penduduk
 								di tahun 2021, kisaran disabilitas anak usia 5-19 tahun mencapai angka
