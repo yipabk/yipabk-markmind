@@ -1,16 +1,15 @@
 import bentara from '../../../assets/images/berita-terkini/bentara.png'
+import berita from '../../../assets/images/berita-terkini/berita.png'
 import image1 from '../../../assets/images/berita-terkini/image-1.png'
 import image2 from '../../../assets/images/berita-terkini/image-2.png'
 import image3 from '../../../assets/images/berita-terkini/image-3.png'
 import image5 from '../../../assets/images/berita-terkini/image-5.png'
 import image6 from '../../../assets/images/berita-terkini/image-6.png'
 import image7 from '../../../assets/images/berita-terkini/image-7.png'
-import berita from '../../../assets/images/berita-terkini/berita.png'
 import mdrt from '../../../assets/images/berita-terkini/mdrt.png'
 import peace from '../../../assets/images/berita-terkini/peace.png'
 import { PublikasiHero } from '../PublikasiHero'
 import { TableSVG } from './TableSVG'
-import { SectionWithImage } from '../../../components/commons/Section/SectionWithImage'
 
 export const BeritaTerkini = () => {
 	return (
