@@ -37,7 +37,7 @@ export const Raise = () => {
           <div
             data-aos="fade-up"
             data-aos-once="true"
-            className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center"
+            className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center font-montserrat"
           >
             {`Program edukasi masyarakat seputar pendidikan dan penanganan anak berkebutuhan khusus
                          melalui website, media sosial, dan newsletters`}
@@ -83,7 +83,7 @@ export const Raise = () => {
             title="2. Kampanye Peduli ABK"
             content={
               <div className="flex flex-col gap-12">
-                <div className="text-sm lg:text-base font-light leading-5 text-justify">
+                <div className="text-sm lg:text-base font-light leading-5">
                   <div className="mb-4">
                     Bertujuan untuk menyebarkan edukasi bagi semua kalangan
                     termasuk pemerintah, lembaga pendidikan, dunia usaha,
@@ -116,11 +116,7 @@ export const Raise = () => {
           />
 
           <div className="flex flex-col justify-center gap-4 max-w-[75%] pb-24">
-            <div
-              data-aos="fade-down"
-              data-aos-once="true"
-              className="text-justify"
-            >
+            <div data-aos="fade-down" data-aos-once="true" className="">
               YIPABK percaya bahwa anak berkebutuhan khusus dan para penyandang
               disabilitas merupakan sosok pribadi yang spesial. Di balik
               kelemahan fisik maupun mental mereka, tersimpan kelebihan yang

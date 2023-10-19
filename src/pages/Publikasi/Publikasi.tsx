@@ -220,60 +220,73 @@ export const Publikasi = () => {
               <img className="w-full object-cover" src={newsletter} alt="" />
             </div>
 
-						<div data-aos='fade-left' data-aos-once='true' className='flex flex-col gap-10'>
-							<div className='text-justify'>
-								Dapatkan informasi terkini seputar kegiatan YIPABK, edukasi terkait anak berkebutuhan khusus, serta
-								cerita dari mereka yang PEDULI setiap bulannya langsung di Inbox Anda!
-							</div>
-							<div className='text-3xl font-bold'>
-								Tertarik membaca koleksi <i>Newsletter</i> kami?
-							</div>
-							<Button
-								linkTo='https://drive.google.com/drive/folders/1C-Xy0O5h10sMaFVNNA83I3jmoG5topWA?usp=drive_link'
-								className='w-full sm:max-w-[256px] h-[56px] text-center flex items-center'>
-								<div>
-									<i>Download</i> di sini!
-								</div>
-							</Button>
-						</div>
-					</div>
-				</div>
-				<div data-aos='fade-down' data-aos-once='true' className='min-h-[60vh] mb-32 flex flex-col items-center'>
-					<div className='text-center text-lg md:text-2xl font-bold mb-12'>
-						Daftar <i>Newsletter</i> Kami!
-					</div>
-					<div className='w-full justify-center items-center flex flex-col gap-6 mb-12'>
-						<div className='text-lg md:text-2xl font-bold w-full justify-center flex flex-col sm:flex-row items-start sm:items-center gap-2'>
-							<div className='min-w-[5rem] sm:min-w-[10rem]'>Nama</div>
-							<input
-								className='bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]'
-								onChange={(e) => setName(e.target.value)}
-								type='text'
-							/>
-						</div>
-						<div className='text-lg md:text-2xl font-bold w-full justify-center flex flex-col sm:flex-row items-start sm:items-center gap-2'>
-							<div className='min-w-[5rem] sm:min-w-[10rem]'>No Telp</div>
-							<input
-								className='bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]'
-								onChange={(e) => setPhoneNumber(e.target.value)}
-								type='tel'
-								pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
-							/>
-						</div>
-						<div className='text-lg md:text-2xl font-bold w-full justify-center flex flex-col sm:flex-row items-start sm:items-center gap-2'>
-							<div className='min-w-[5rem] sm:min-w-[10rem]'>Email</div>
-							<input
-								className='bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]'
-								onChange={(e) => setEmail(e.target.value)}
-								type='email'
-							/>
-						</div>
-					</div>
-					<Button onClick={handleSendEmail} className='w-[200px] h-[56px] flex items-center'>
-						Daftar
-					</Button>
-				</div>
-			</div>
-		</div>
-	)
-}
+            <div
+              data-aos="fade-left"
+              data-aos-once="true"
+              className="flex flex-col gap-10"
+            >
+              <div className="">
+                Dapatkan informasi terkini seputar kegiatan YIPABK, edukasi
+                terkait anak berkebutuhan khusus, serta cerita dari mereka yang
+                PEDULI setiap bulannya langsung di Inbox Anda!
+              </div>
+              <div className="text-3xl font-bold">
+                Tertarik membaca koleksi <i>Newsletter</i> kami?
+              </div>
+              <Button
+                linkTo="https://drive.google.com/drive/folders/1C-Xy0O5h10sMaFVNNA83I3jmoG5topWA?usp=drive_link"
+                className="w-full sm:max-w-[256px] h-[56px] text-center flex items-center"
+              >
+                <div>
+                  <i>Download</i> di sini!
+                </div>
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div
+          data-aos="fade-down"
+          data-aos-once="true"
+          className="min-h-[60vh] mb-32 flex flex-col items-center"
+        >
+          <div className="text-center text-lg md:text-2xl font-bold mb-12">
+            Daftar <i>Newsletter</i> Kami!
+          </div>
+          <div className="w-full justify-center items-center flex flex-col gap-6 mb-12">
+            <div className="text-lg md:text-2xl font-bold w-full justify-center flex flex-col sm:flex-row items-start sm:items-center gap-2">
+              <div className="min-w-[5rem] sm:min-w-[10rem]">Nama</div>
+              <input
+                className="bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]"
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+              />
+            </div>
+            <div className="text-lg md:text-2xl font-bold w-full justify-center flex flex-col sm:flex-row items-start sm:items-center gap-2">
+              <div className="min-w-[5rem] sm:min-w-[10rem]">No Telp</div>
+              <input
+                className="bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]"
+                onChange={(e) => setPhoneNumber(e.target.value)}
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
+            </div>
+            <div className="text-lg md:text-2xl font-bold w-full justify-center flex flex-col sm:flex-row items-start sm:items-center gap-2">
+              <div className="min-w-[5rem] sm:min-w-[10rem]">Email</div>
+              <input
+                className="bg-grey/25 px-4 py-2 rounded-md w-full md:w-[645px]"
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+              />
+            </div>
+          </div>
+          <Button
+            onClick={handleSendEmail}
+            className="w-[200px] h-[56px] flex items-center"
+          >
+            Daftar
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};

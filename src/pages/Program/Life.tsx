@@ -34,7 +34,7 @@ export const Life = () => {
           <div
             data-aos="fade-up"
             data-aos-once="true"
-            className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center"
+            className="pt-16 px-8 text-sm md:text-base font-semibold leading-7 whitespace-pre-line text-center font-montserrat"
           >
             {` Program bantuan bagi orang tua/wali dan anak dengan gangguan perkembangan atau kesulitan 
             belajar yang mengalami kesulitan ekonomi`}
@@ -52,7 +52,7 @@ export const Life = () => {
                   pemberian surat asesmen.
                 </div>
                 <div className="mb-4">
-                  Asesmen meliputi asesmen  dasar dan tes intelegensi yang 
+                  Asesmen meliputi asesmen dasar dan tes intelegensi yang 
                   dilakukan oleh tenaga Psikolog melalui wawancara, observasi,
                   pengukuran informal dan tes baku verbal dan tes IQ.
                 </div>
